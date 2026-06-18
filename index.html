@@ -3,1137 +3,1260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SarkariTracker – सरकारी परीक्षा अपडेट | Latest Jobs 2026</title>
-<meta name="description" content="भारत के सभी सरकारी परीक्षाओं की जानकारी – Vacancy, Admit Card, Result, News – जून 2026">
+<title>SarkariTracker – Live Govt Exam Updates</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --primary:#1a56db;--primary-dark:#1340a6;--primary-light:#e8efff;
-    --secondary:#0e9f6e;--danger:#e02424;--warning:#ff8c00;--orange:#f05a28;--purple:#7e3af2;
-    --bg:#f0f4ff;--card:#ffffff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;
-    --sidebar-width:260px;--header-height:64px;--radius:12px;
-    --shadow:0 2px 12px rgba(26,86,219,.08);--shadow-hover:0 8px 32px rgba(26,86,219,.18);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter','Noto Sans Devanagari',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+:root{
+  --p:#1a56db;--pd:#1340a6;--pl:#e8efff;--g:#059669;--d:#dc2626;--w:#d97706;
+  --or:#ea580c;--pu:#7c3aed;--bg:#f0f4ff;--card:#fff;--tx:#111827;--mu:#6b7280;--br:#e5e7eb;
+  --sw:264px;--hh:62px;--r:10px;--sh:0 1px 10px rgba(26,86,219,.08);--shh:0 6px 28px rgba(26,86,219,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+a{text-decoration:none;color:inherit}
+button{font-family:'Inter',sans-serif}
 
-  /* HEADER */
-  header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-height);
-    background:linear-gradient(135deg,#1a3a8f 0%,#1a56db 60%,#2563eb 100%);
-    display:flex;align-items:center;padding:0 20px;gap:16px;box-shadow:0 2px 16px rgba(26,86,219,.25)}
-  .menu-btn{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;padding:6px;border-radius:8px;line-height:1}
-  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-  .logo-icon{width:38px;height:38px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-  .logo-text{color:#fff}.logo-text .name{font-size:18px;font-weight:800;letter-spacing:-.3px}.logo-text .tagline{font-size:10px;opacity:.8;margin-top:-2px}
-  .header-search{flex:1;max-width:460px;margin:0 auto;display:flex;align-items:center;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:0 14px;gap:8px}
-  .header-search input{flex:1;background:none;border:none;outline:none;color:#fff;font-size:14px;padding:10px 0}
-  .header-search input::placeholder{color:rgba(255,255,255,.65)}
-  .header-search span{color:rgba(255,255,255,.7);font-size:16px}
-  .header-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
-  .live-badge{background:#e02424;color:#fff;font-size:10px;font-weight:800;padding:4px 8px;border-radius:6px;letter-spacing:.5px;animation:pulse 1.5s infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
-  .notif-btn{position:relative;background:rgba(255,255,255,.15);border:none;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:18px;transition:background .2s}
-  .notif-btn:hover{background:rgba(255,255,255,.25)}
-  .notif-badge{position:absolute;top:-3px;right:-3px;background:#e02424;color:#fff;font-size:9px;font-weight:700;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #1a56db}
-  .pref-btn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:8px;cursor:pointer;transition:all .2s;white-space:nowrap}
-  .pref-btn:hover{background:rgba(255,255,255,.25)}
-  .date-display{color:rgba(255,255,255,.85);font-size:11px;font-weight:600;white-space:nowrap}
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:200;height:var(--hh);
+  background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 55%,#2563eb 100%);
+  display:flex;align-items:center;padding:0 14px;gap:10px;
+  box-shadow:0 2px 16px rgba(30,58,138,.35)}
+.mn-btn{display:none;background:none;border:none;color:#fff;font-size:21px;cursor:pointer;padding:5px;border-radius:7px}
+.logo{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.logo-i{width:34px;height:34px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.logo-t{color:#fff}.logo-n{font-size:16px;font-weight:800}.logo-s{font-size:9px;opacity:.75}
+.h-search{flex:1;max-width:400px;margin:0 auto;display:flex;align-items:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:8px;padding:0 11px;gap:7px}
+.h-search input{flex:1;background:none;border:none;outline:none;color:#fff;font-size:13px;padding:8px 0}
+.h-search input::placeholder{color:rgba(255,255,255,.55)}
+.h-right{margin-left:auto;display:flex;align-items:center;gap:7px;flex-shrink:0}
+.live-p{background:#dc2626;color:#fff;font-size:9px;font-weight:800;padding:3px 7px;border-radius:4px;animation:bl 1.5s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.55}}
+.h-date{color:rgba(255,255,255,.82);font-size:11px;font-weight:600;white-space:nowrap}
+.h-btn{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:#fff;
+  font-size:11px;font-weight:600;padding:7px 12px;border-radius:7px;cursor:pointer;transition:.18s;
+  display:flex;align-items:center;gap:5px}
+.h-btn:hover{background:rgba(255,255,255,.26)}
+.h-btn.spin .ri{animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.nb{position:relative}.nb-dot{position:absolute;top:-3px;right:-3px;background:#dc2626;color:#fff;
+  font-size:8px;font-weight:700;width:14px;height:14px;border-radius:50%;display:flex;
+  align-items:center;justify-content:center;border:2px solid #1d4ed8}
 
-  /* LAYOUT */
-  .layout{display:flex;padding-top:var(--header-height);min-height:100vh}
+/* LAYOUT */
+.wrap{display:flex;padding-top:var(--hh);min-height:100vh}
 
-  /* SIDEBAR */
-  aside{width:var(--sidebar-width);flex-shrink:0;position:fixed;top:var(--header-height);left:0;bottom:0;background:#fff;border-right:1px solid var(--border);overflow-y:auto;z-index:50;transition:transform .3s ease;padding-bottom:80px}
-  aside.hidden{transform:translateX(-100%)}
-  .sidebar-section{padding:14px 0;border-bottom:1px solid var(--border)}
-  .sidebar-label{font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;padding:0 18px;margin-bottom:6px}
-  .sidebar-item{display:flex;align-items:center;gap:10px;padding:9px 18px;cursor:pointer;color:var(--text);font-size:14px;font-weight:500;border-left:3px solid transparent;text-decoration:none;transition:all .15s}
-  .sidebar-item:hover{background:var(--primary-light);color:var(--primary)}
-  .sidebar-item.active{background:var(--primary-light);color:var(--primary);border-left-color:var(--primary);font-weight:600}
-  .sidebar-item .icon{font-size:16px;width:20px;text-align:center}
-  .sidebar-count{margin-left:auto;background:var(--primary);color:#fff;font-size:10px;font-weight:700;min-width:20px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 5px}
-  .sidebar-count.red{background:var(--danger)}.sidebar-count.green{background:var(--secondary)}.sidebar-count.orange{background:var(--warning)}
+/* SIDEBAR */
+aside{width:var(--sw);flex-shrink:0;position:fixed;top:var(--hh);left:0;bottom:0;
+  background:#fff;border-right:1px solid var(--br);overflow-y:auto;z-index:100;
+  transition:transform .28s;padding-bottom:60px}
+.sb-sec{padding:10px 0;border-bottom:1px solid var(--br)}
+.sb-lbl{font-size:9px;font-weight:700;color:var(--mu);letter-spacing:.8px;text-transform:uppercase;
+  padding:0 14px;margin-bottom:4px}
+.sb-i{display:flex;align-items:center;gap:8px;padding:8px 14px;cursor:pointer;color:var(--tx);
+  font-size:13px;font-weight:500;border-left:3px solid transparent;transition:.14s}
+.sb-i:hover{background:var(--pl);color:var(--p)}
+.sb-i.act{background:var(--pl);color:var(--p);border-left-color:var(--p);font-weight:600}
+.sb-i .ic{font-size:14px;width:17px;text-align:center}
+.sb-cnt{margin-left:auto;background:var(--p);color:#fff;font-size:9px;font-weight:700;
+  min-width:17px;height:15px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+.sb-cnt.r{background:var(--d)}.sb-cnt.g{background:var(--g)}.sb-cnt.o{background:var(--w)}
 
-  /* MAIN */
-  main{margin-left:var(--sidebar-width);flex:1;padding:24px 20px;min-height:100vh}
-  .page{display:none;animation:fadeIn .25s ease}
-  .page.active{display:block}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+/* MAIN */
+main{margin-left:var(--sw);flex:1;padding:20px 16px;min-height:100vh}
+.pg{display:none;animation:fi .22s ease}
+.pg.act{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
 
-  /* STATS */
-  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
-  .stat-card{background:var(--card);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);border:1px solid var(--border);display:flex;align-items:center;gap:14px;transition:box-shadow .2s;cursor:pointer}
-  .stat-card:hover{box-shadow:var(--shadow-hover)}
-  .stat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-  .stat-info .num{font-size:26px;font-weight:800;line-height:1}.stat-info .lbl{font-size:12px;color:var(--muted);margin-top:3px;font-weight:500}.stat-info .chg{font-size:11px;margin-top:2px;font-weight:600}
-  .chg.up{color:var(--secondary)}.chg.down{color:var(--danger)}
+/* STATUS BAR */
+.sbar{background:#fff;border:1px solid var(--br);border-radius:var(--r);padding:9px 14px;
+  margin-bottom:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:11px;box-shadow:var(--sh)}
+.sbar strong{color:var(--tx);font-size:12px}
+.fs{margin-left:auto;display:flex;align-items:center;gap:5px;font-size:10px;color:var(--mu)}
+.fd{width:6px;height:6px;border-radius:50%}
+.fd.ok{background:var(--g)}.fd.ld{background:var(--w);animation:bl 1s infinite}.fd.er{background:var(--d)}
 
-  /* SECTION HEADER */
-  .section-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-  .section-hdr h2{font-size:17px;font-weight:700}
-  .section-hdr a{font-size:13px;color:var(--primary);text-decoration:none;font-weight:600;cursor:pointer}
+/* TICKER */
+.tick{background:linear-gradient(135deg,#1e3a8a,#1d4ed8);color:#fff;padding:7px 16px;
+  display:flex;align-items:center;gap:9px;margin-bottom:16px;border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--sh)}
+.tick-l{background:#fff;color:var(--p);font-size:8px;font-weight:800;padding:2px 7px;
+  border-radius:3px;white-space:nowrap;animation:bl 1.5s infinite}
+.tick-in{overflow:hidden;flex:1}
+.tick-t{display:inline-block;white-space:nowrap;animation:tk 50s linear infinite;font-size:11px}
+@keyframes tk{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
 
-  /* CHIPS */
-  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .chip{padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;border:1.5px solid var(--border);background:#fff;cursor:pointer;transition:all .15s;color:var(--muted)}
-  .chip:hover{border-color:var(--primary);color:var(--primary)}
-  .chip.active{background:var(--primary);border-color:var(--primary);color:#fff}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:20px}
+.stat{background:var(--card);border-radius:var(--r);padding:14px 16px;box-shadow:var(--sh);
+  border:1px solid var(--br);display:flex;align-items:center;gap:11px;cursor:pointer;transition:.18s}
+.stat:hover{box-shadow:var(--shh)}
+.st-ic{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.st-n{font-size:22px;font-weight:800;line-height:1}
+.st-l{font-size:11px;color:var(--mu);margin-top:2px}
+.st-c{font-size:10px;margin-top:1px;font-weight:600}
+.up{color:var(--g)}.dn{color:var(--d)}
 
-  /* EXAM CARDS */
-  .exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
-  .exam-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden;transition:all .2s;cursor:pointer;text-decoration:none;display:block;color:var(--text)}
-  .exam-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}
-  .new-ribbon{position:absolute;top:10px;right:10px;background:#e02424;color:#fff;font-size:9px;font-weight:800;padding:2px 7px;border-radius:4px;letter-spacing:.5px}
-  .exam-card-top{padding:16px 18px 12px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:flex-start;position:relative}
-  .exam-logo{width:44px;height:44px;border-radius:10px;background:var(--primary-light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-  .exam-info{flex:1;min-width:0}
-  .exam-name{font-size:14px;font-weight:700;margin-bottom:2px}
-  .exam-org{font-size:11px;color:var(--muted);margin-bottom:6px}
-  .exam-tags{display:flex;gap:5px;flex-wrap:wrap}
-  .tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:.3px}
-  .tag-blue{background:#dbeafe;color:#1e40af}.tag-green{background:#d1fae5;color:#065f46}.tag-orange{background:#fff3cd;color:#92400e}.tag-red{background:#fee2e2;color:#991b1b}.tag-purple{background:#ede9fe;color:#5b21b6}.tag-gray{background:#f3f4f6;color:#374151}
-  .save-btn{background:none;border:none;font-size:18px;cursor:pointer;color:var(--muted);padding:4px;border-radius:6px;transition:all .15s;flex-shrink:0;text-decoration:none}
-  .save-btn:hover{color:var(--primary);background:var(--primary-light)}
-  .save-btn.saved{color:#f59e0b}
-  .exam-card-body{padding:14px 18px}
-  .exam-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .meta-item label{font-size:10px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
-  .meta-item .val{font-size:13px;font-weight:600;margin-top:2px}
-  .meta-item .val.urgent{color:var(--danger)}.meta-item .val.active{color:var(--secondary)}
-  .exam-card-footer{padding:10px 18px;background:var(--bg);display:flex;align-items:center;justify-content:space-between}
-  .status-dot{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600}
-  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-  .dot-green{background:var(--secondary);box-shadow:0 0 0 3px rgba(14,159,110,.2)}
-  .dot-orange{background:var(--warning);box-shadow:0 0 0 3px rgba(255,140,0,.2)}
-  .dot-red{background:var(--danger);box-shadow:0 0 0 3px rgba(224,36,36,.2)}
-  .dot-gray{background:#9ca3af}
-  .apply-now-btn{display:inline-flex;align-items:center;gap:5px;background:var(--primary);color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:7px;text-decoration:none;transition:background .2s;border:none;cursor:pointer}
-  .apply-now-btn:hover{background:var(--primary-dark)}
-  .apply-now-btn.green{background:var(--secondary)}.apply-now-btn.green:hover{background:#0a7a56}
-  .apply-now-btn.gray{background:#9ca3af;cursor:default}
-  .notif-toggle{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);cursor:pointer}
-  .toggle-sw{width:32px;height:18px;background:var(--border);border-radius:9px;position:relative;transition:background .2s;flex-shrink:0}
-  .toggle-sw::after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
-  .toggle-sw.on{background:var(--primary)}.toggle-sw.on::after{transform:translateX(14px)}
+/* SECTION HEADER */
+.sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+.sh h2{font-size:15px;font-weight:700}
+.sh .lk{font-size:12px;color:var(--p);cursor:pointer;font-weight:600}
 
-  /* NEWS */
-  .news-list{display:flex;flex-direction:column;gap:12px}
-  .news-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);padding:16px 18px;display:flex;gap:14px;transition:all .2s;cursor:pointer;text-decoration:none;color:var(--text)}
-  .news-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);border-color:var(--primary)}
-  .news-thumb{width:72px;height:60px;border-radius:8px;background:linear-gradient(135deg,var(--primary-light),#dbeafe);display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
-  .news-body{flex:1;min-width:0}
-  .news-source{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap}
-  .source-badge{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:.5px;text-transform:uppercase}
-  .badge-blue{background:var(--primary);color:#fff}.badge-green{background:var(--secondary);color:#fff}.badge-orange{background:var(--warning);color:#fff}.badge-red{background:var(--danger);color:#fff}.badge-purple{background:var(--purple);color:#fff}
-  .news-time{font-size:11px;color:var(--muted)}
-  .news-trending{font-size:10px;color:var(--orange);font-weight:700;display:flex;align-items:center;gap:3px}
-  .news-title{font-size:14px;font-weight:600;margin-bottom:4px;line-height:1.4}
-  .news-snippet{font-size:12px;color:var(--muted);line-height:1.5}
-  .news-actions{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
-  .news-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:4px;background:var(--bg);color:var(--primary);border:1px solid var(--border)}
-  .source-link{font-size:11px;color:var(--primary);font-weight:600;display:flex;align-items:center;gap:3px;margin-left:auto;white-space:nowrap}
+/* CHIPS */
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}
+.chip{padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;
+  border:1.5px solid var(--br);background:#fff;cursor:pointer;color:var(--mu);transition:.14s}
+.chip:hover{border-color:var(--p);color:var(--p)}
+.chip.act{background:var(--p);border-color:var(--p);color:#fff}
 
-  /* ALERT CARDS */
-  .alert-list{display:flex;flex-direction:column;gap:10px}
-  .alert-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);padding:14px 18px;display:flex;gap:14px;align-items:center;transition:all .2s}
-  .alert-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-  .alert-body{flex:1}
-  .alert-title{font-size:14px;font-weight:600;margin-bottom:3px}
-  .alert-sub{font-size:12px;color:var(--muted)}
-  .alert-time{font-size:11px;color:var(--muted);margin-top:3px}
-  .alert-action{font-size:12px;font-weight:600;color:var(--primary);background:var(--primary-light);border:none;padding:6px 12px;border-radius:7px;cursor:pointer;white-space:nowrap;transition:all .15s;text-decoration:none;display:inline-block}
-  .alert-action:hover{background:var(--primary);color:#fff}
-  .alert-unread{width:8px;height:8px;border-radius:50%;background:var(--primary);flex-shrink:0;align-self:flex-start;margin-top:6px}
+/* COUNTDOWN */
+.cdr{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px;margin-bottom:20px}
+.cdc{border-radius:var(--r);padding:14px 16px;color:#fff;display:block;transition:.18s}
+.cdc:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.cdc.c1{background:linear-gradient(135deg,#b91c1c,#dc2626);box-shadow:0 4px 14px rgba(220,38,38,.3)}
+.cdc.c2{background:linear-gradient(135deg,#c2410c,#ea580c);box-shadow:0 4px 14px rgba(234,88,12,.3)}
+.cdc.c3{background:linear-gradient(135deg,#1d4ed8,#2563eb);box-shadow:0 4px 14px rgba(37,99,235,.3)}
+.cdc.c4{background:linear-gradient(135deg,#047857,#059669);box-shadow:0 4px 14px rgba(5,150,105,.3)}
+.cdc.c5{background:linear-gradient(135deg,#6d28d9,#7c3aed);box-shadow:0 4px 14px rgba(124,58,237,.3)}
+.cd-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.cd-n{font-size:11px;font-weight:700;opacity:.9}.cd-t{font-size:9px;opacity:.7;margin-top:2px}.cd-ic{font-size:20px;opacity:.8}
+.cd-d{font-size:32px;font-weight:900;line-height:1}
+.cd-l{font-size:10px;opacity:.78;margin-top:2px}
 
-  /* TABLE */
-  .table-wrap{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden;overflow-x:auto}
-  .data-table{width:100%;border-collapse:collapse;min-width:600px}
-  .data-table th{background:#f9fafb;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);padding:12px 16px;text-align:left;border-bottom:1px solid var(--border)}
-  .data-table td{padding:13px 16px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:middle}
-  .data-table tr:last-child td{border-bottom:none}
-  .data-table tr:hover td{background:var(--bg)}
-  .pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px}
-  .pill-green{background:#d1fae5;color:#065f46}.pill-orange{background:#fff3cd;color:#92400e}.pill-blue{background:#dbeafe;color:#1e40af}.pill-red{background:#fee2e2;color:#991b1b}.pill-gray{background:#f3f4f6;color:#374151}.pill-purple{background:#ede9fe;color:#5b21b6}
-  .dl-btn{display:inline-flex;align-items:center;gap:5px;background:var(--primary);color:#fff;font-size:11px;font-weight:600;padding:5px 12px;border-radius:6px;text-decoration:none;border:none;cursor:pointer;transition:background .2s}
-  .dl-btn:hover{background:var(--primary-dark)}
-  .dl-btn.green{background:var(--secondary)}.dl-btn.green:hover{background:#0a7a56}
-  .dl-btn.disabled{background:var(--border);color:var(--muted);cursor:not-allowed;pointer-events:none}
+/* EXAM GRID */
+.eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:13px}
+.ec{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--br);
+  overflow:hidden;transition:.18s;display:block;color:var(--tx)}
+.ec:hover{box-shadow:var(--shh);transform:translateY(-2px);border-color:var(--p)}
+.ec-top{padding:13px 14px 10px;border-bottom:1px solid var(--br);display:flex;gap:10px;align-items:flex-start}
+.ec-lo{width:40px;height:40px;border-radius:9px;background:var(--pl);display:flex;
+  align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ec-info{flex:1;min-width:0}
+.ec-n{font-size:13px;font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:4px;flex-wrap:wrap;line-height:1.3}
+.ec-o{font-size:10px;color:var(--mu);margin-bottom:4px}
+.ec-tgs{display:flex;gap:4px;flex-wrap:wrap}
+.tg{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px}
+.tb{background:#dbeafe;color:#1e40af}.tg2{background:#d1fae5;color:#065f46}
+.to{background:#fef3c7;color:#92400e}.tp{background:#ede9fe;color:#5b21b6}.tgr{background:#f3f4f6;color:#374151}
+.sv-btn{background:none;border:none;font-size:16px;cursor:pointer;color:var(--mu);
+  padding:3px;border-radius:4px;transition:.14s;flex-shrink:0}
+.sv-btn:hover{color:var(--p)}.sv-btn.s{color:#d97706}
+.ec-body{padding:11px 14px}
+.ec-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mi label{font-size:9px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+.mi .vl{font-size:12px;font-weight:600;margin-top:2px}
+.vl.urg{color:var(--d)}.vl.ok{color:var(--g)}
+.ec-foot{padding:8px 14px;background:#fafafa;border-top:1px solid var(--br);display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}
+.st-dot{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.dot-g{background:var(--g);box-shadow:0 0 0 2px rgba(5,150,105,.2)}
+.dot-o{background:var(--w);box-shadow:0 0 0 2px rgba(217,119,6,.2)}
+.dot-r{background:var(--d);box-shadow:0 0 0 2px rgba(220,38,38,.2)}
+/* 3 action buttons per card */
+.ec-acts{display:flex;gap:5px;flex-wrap:wrap}
+.act-btn{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;
+  padding:4px 10px;border-radius:5px;text-decoration:none;transition:.15s;border:1.5px solid;cursor:pointer}
+.act-apply{background:var(--p);color:#fff;border-color:var(--p)}
+.act-apply:hover{background:var(--pd);border-color:var(--pd)}
+.act-admit{background:#fff;color:var(--g);border-color:var(--g)}
+.act-admit:hover{background:var(--g);color:#fff}
+.act-result{background:#fff;color:var(--w);border-color:var(--w)}
+.act-result:hover{background:var(--w);color:#fff}
+.act-dis{background:#f3f4f6;color:#9ca3af;border-color:#e5e7eb;cursor:not-allowed;pointer-events:none}
 
-  /* PREFERENCES MODAL */
-  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
-  .overlay.open{display:flex}
-  .modal{background:#fff;border-radius:16px;width:100%;max-width:600px;max-height:85vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 64px rgba(0,0,0,.2)}
-  .modal-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-  .modal-header h3{font-size:18px;font-weight:700}
-  .modal-close{background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted);border-radius:8px;padding:4px 8px;transition:all .15s}
-  .modal-close:hover{background:var(--bg);color:var(--text)}
-  .modal-body{padding:20px 24px;overflow-y:auto;flex:1}
-  .pref-section{margin-bottom:24px}
-  .pref-section h4{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
-  .pref-checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
-  .pref-check{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s;font-size:13px}
-  .pref-check:hover{border-color:var(--primary);background:var(--primary-light)}
-  .pref-check input{accent-color:var(--primary);width:15px;height:15px}
-  .pref-check.checked{border-color:var(--primary);background:var(--primary-light)}
-  .modal-footer{padding:16px 24px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end}
-  .btn{padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all .15s}
-  .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--primary-dark)}
-  .btn-outline{background:#fff;color:var(--text);border:1.5px solid var(--border)}.btn-outline:hover{background:var(--bg)}
+/* BADGE */
+.nl{background:#dc2626;color:#fff;font-size:8px;font-weight:800;padding:2px 5px;border-radius:3px;animation:bl 1.8s infinite}
+.lv{background:var(--g);color:#fff;font-size:8px;font-weight:800;padding:2px 5px;border-radius:3px;animation:bl 1.8s infinite}
 
-  /* TICKER */
-  .ticker-wrap{background:linear-gradient(135deg,#1a3a8f,#1a56db);color:#fff;padding:9px 20px;display:flex;align-items:center;gap:12px;margin-bottom:20px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-  .ticker-label{background:#fff;color:var(--primary);font-size:10px;font-weight:800;padding:3px 10px;border-radius:4px;white-space:nowrap;letter-spacing:.5px;animation:pulse 1.5s infinite}
-  .ticker-inner{overflow:hidden;flex:1}
-  .ticker-text{display:inline-block;white-space:nowrap;animation:ticker 40s linear infinite;font-size:13px;cursor:pointer}
-  @keyframes ticker{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}}
+/* NEWS */
+.nl2{display:flex;flex-direction:column;gap:10px}
+.nc{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--br);
+  overflow:hidden;transition:.18s;display:block;color:var(--tx)}
+.nc:hover{box-shadow:var(--shh);border-color:var(--p)}
+.nc-main{padding:13px 14px;display:flex;gap:11px}
+.nc-th{width:58px;height:50px;border-radius:7px;background:linear-gradient(135deg,#dbeafe,#e0e7ff);
+  display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;overflow:hidden}
+.nc-th img{width:100%;height:100%;object-fit:cover;border-radius:7px}
+.nc-body{flex:1;min-width:0}
+.nc-src{display:flex;align-items:center;gap:5px;margin-bottom:4px;flex-wrap:wrap}
+.sbg{font-size:8px;font-weight:700;padding:2px 5px;border-radius:3px;letter-spacing:.3px;text-transform:uppercase}
+.sb-o{background:var(--p);color:#fff}.sb-g{background:var(--g);color:#fff}
+.sb-w{background:var(--w);color:#fff}.sb-r{background:var(--d);color:#fff}.sb-p{background:var(--pu);color:#fff}
+.nc-time{font-size:10px;color:var(--mu)}
+.nc-title{font-size:13px;font-weight:600;line-height:1.4;margin-bottom:3px}
+.nc-snip{font-size:11px;color:var(--mu);line-height:1.5}
+/* official action bar below news card */
+.nc-actions{border-top:1px solid var(--br);padding:8px 14px;background:#fafafa;
+  display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.nc-art-btn{font-size:10px;font-weight:600;color:var(--mu);display:flex;align-items:center;gap:3px}
+.nc-official-btn{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;
+  padding:4px 10px;border-radius:5px;text-decoration:none;transition:.15s;border:1.5px solid}
+.nob-apply{background:var(--p);color:#fff;border-color:var(--p)}.nob-apply:hover{background:var(--pd)}
+.nob-admit{background:#fff;color:var(--g);border-color:var(--g)}.nob-admit:hover{background:var(--g);color:#fff}
+.nob-result{background:#fff;color:var(--w);border-color:var(--w)}.nob-result:hover{background:var(--w);color:#fff}
+.nob-info{background:var(--pl);color:var(--p);border-color:var(--p)}.nob-info:hover{background:var(--p);color:#fff}
 
-  /* COUNTDOWN */
-  .countdown-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-bottom:24px}
-  .countdown-card{background:linear-gradient(135deg,var(--primary),#2563eb);border-radius:var(--radius);padding:18px 20px;color:#fff;box-shadow:0 4px 16px rgba(26,86,219,.3);cursor:pointer;transition:transform .2s;text-decoration:none;display:block}
-  .countdown-card:hover{transform:translateY(-2px)}
-  .countdown-card.orange-grad{background:linear-gradient(135deg,#f05a28,#ff8c00);box-shadow:0 4px 16px rgba(240,90,40,.3)}
-  .countdown-card.green-grad{background:linear-gradient(135deg,#059669,#0e9f6e);box-shadow:0 4px 16px rgba(14,159,110,.3)}
-  .countdown-card.purple-grad{background:linear-gradient(135deg,#6d28d9,#7e3af2);box-shadow:0 4px 16px rgba(126,58,242,.3)}
-  .countdown-card.red-grad{background:linear-gradient(135deg,#dc2626,#e02424);box-shadow:0 4px 16px rgba(224,36,36,.3)}
-  .cc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-  .cc-name{font-size:13px;font-weight:700;opacity:.9}.cc-type{font-size:10px;opacity:.75;margin-top:2px}.cc-icon{font-size:24px;opacity:.8}
-  .cc-days{font-size:38px;font-weight:900;line-height:1}
-  .cc-label{font-size:11px;opacity:.8;margin-top:3px}
+/* SKELETON */
+.skel-wrap{display:flex;flex-direction:column;gap:10px}
+.skel-card{background:var(--card);border-radius:var(--r);padding:13px 14px;display:flex;gap:11px;border:1px solid var(--br)}
+.sk-ic{width:58px;height:50px;border-radius:7px;flex-shrink:0;animation:pulse .sk}
+.sk-b{flex:1;display:flex;flex-direction:column;gap:6px;padding-top:3px}
+.sk-l{height:10px;border-radius:3px}
+@keyframes pulse{0%,100%{background:#f3f4f6}50%{background:#e5e7eb}}
+.sk-ic,.sk-l{animation:pulse 1.4s infinite}
 
-  /* STATE GRID */
-  .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
-  .state-card{background:var(--card);border-radius:10px;padding:14px;border:1.5px solid var(--border);cursor:pointer;transition:all .15s;text-align:center;text-decoration:none;display:block;color:var(--text)}
-  .state-card:hover,.state-card.active{border-color:var(--primary);background:var(--primary-light)}
-  .state-card .si{font-size:24px;margin-bottom:6px}.state-card .sn{font-size:12px;font-weight:600}.state-card .sc{font-size:10px;color:var(--muted);margin-top:2px}
+/* ALERTS */
+.al{display:flex;flex-direction:column;gap:8px}
+.ac{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--br);
+  padding:12px 14px;display:flex;gap:11px;align-items:center;transition:.18s;text-decoration:none;color:var(--tx)}
+.ac:hover{box-shadow:var(--shh);border-color:var(--p)}
+.ac-ic{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.ac-body{flex:1}.ac-t{font-size:13px;font-weight:600;margin-bottom:2px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.ac-s{font-size:11px;color:var(--mu)}.ac-tm{font-size:10px;color:var(--mu);margin-top:2px}
+.ac-btn{font-size:11px;font-weight:600;color:var(--p);background:var(--pl);border:none;
+  padding:5px 10px;border-radius:6px;cursor:pointer;white-space:nowrap;transition:.15s;text-decoration:none;display:inline-block}
+.ac-btn:hover{background:var(--p);color:#fff}
+.unrd{width:6px;height:6px;border-radius:50%;background:var(--p);flex-shrink:0;align-self:flex-start;margin-top:5px}
 
-  /* EMPTY */
-  .empty{text-align:center;padding:50px 20px;color:var(--muted)}
-  .empty .ei{font-size:48px;margin-bottom:12px}
-  .empty h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px}
-  .empty p{font-size:13px}
+/* TABLE */
+.tw{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--br);overflow:hidden;overflow-x:auto}
+.dt{width:100%;border-collapse:collapse;min-width:580px}
+.dt th{background:#f9fafb;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+  color:var(--mu);padding:10px 13px;text-align:left;border-bottom:1px solid var(--br)}
+.dt td{padding:11px 13px;font-size:12px;border-bottom:1px solid var(--br);vertical-align:middle}
+.dt tr:last-child td{border-bottom:none}.dt tr:hover td{background:#fafafe}
+.pill{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px}
+.pg{background:#d1fae5;color:#065f46}.po{background:#fef3c7;color:#92400e}
+.pgr{background:#f3f4f6;color:#374151}
+.db{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;
+  padding:4px 10px;border-radius:5px;text-decoration:none;transition:.15s}
+.db.blue{background:var(--p);color:#fff}.db.blue:hover{background:var(--pd)}
+.db.green{background:var(--g);color:#fff}.db.green:hover{background:#047857}
+.db.dis{background:var(--br);color:var(--mu);pointer-events:none}
 
-  /* TOAST */
-  #toast-container{position:fixed;bottom:20px;right:20px;z-index:1000;display:flex;flex-direction:column;gap:8px}
-  .toast{background:#1f2937;color:#fff;padding:12px 18px;border-radius:10px;font-size:13px;font-weight:500;max-width:300px;box-shadow:0 4px 20px rgba(0,0,0,.25);display:flex;align-items:center;gap:8px;animation:slideUp .3s ease}
-  @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+/* MODAL */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;display:none;
+  align-items:center;justify-content:center;padding:18px}
+.ov.op{display:flex}
+.md{background:#fff;border-radius:14px;width:100%;max-width:560px;max-height:86vh;
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.md-h{padding:16px 20px;border-bottom:1px solid var(--br);display:flex;align-items:center;justify-content:space-between}
+.md-h h3{font-size:15px;font-weight:700}
+.md-cl{background:none;border:none;font-size:18px;cursor:pointer;color:var(--mu);
+  border-radius:6px;padding:3px 7px;transition:.14s}.md-cl:hover{background:var(--bg)}
+.md-b{padding:16px 20px;overflow-y:auto;flex:1}
+.ps{margin-bottom:18px}.ps h4{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.4px;margin-bottom:9px}
+.pc{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px}
+.pch{display:flex;align-items:center;gap:6px;padding:7px 10px;border:1.5px solid var(--br);
+  border-radius:7px;cursor:pointer;transition:.14s;font-size:12px}
+.pch:hover{border-color:var(--p);background:var(--pl)}.pch input{accent-color:var(--p);width:13px;height:13px}.pch.ck{border-color:var(--p);background:var(--pl)}
+.md-f{padding:12px 20px;border-top:1px solid var(--br);display:flex;gap:8px;justify-content:flex-end}
+.btn{padding:8px 18px;border-radius:7px;font-size:13px;font-weight:600;border:none;cursor:pointer;transition:.14s}
+.btn-p{background:var(--p);color:#fff}.btn-p:hover{background:var(--pd)}
+.btn-o{background:#fff;color:var(--tx);border:1.5px solid var(--br)}.btn-o:hover{background:var(--bg)}
 
-  /* OVERLAY BG */
-  .overlay-bg{position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:40;display:none}
-  .overlay-bg.open{display:block}
+/* TOAST */
+#toasts{position:fixed;bottom:16px;right:16px;z-index:400;display:flex;flex-direction:column;gap:6px}
+.ts{background:#1f2937;color:#fff;padding:10px 15px;border-radius:9px;font-size:12px;font-weight:500;
+  max-width:270px;box-shadow:0 4px 18px rgba(0,0,0,.22);display:flex;align-items:center;gap:6px;animation:su .28s ease}
+@keyframes su{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}
 
-  /* SCROLLBAR */
-  ::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:3px}
+/* EMPTY */
+.emp{text-align:center;padding:40px 16px;color:var(--mu)}
+.emp-i{font-size:40px;margin-bottom:9px}.emp h3{font-size:14px;font-weight:600;color:var(--tx);margin-bottom:4px}.emp p{font-size:12px}
 
-  /* NEW label */
-  .new-label{background:#e02424;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;animation:pulse 1.5s infinite}
-  .hot-label{background:#ff8c00;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
+/* OVBG */
+.ovbg{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:50;display:none}
+.ovbg.op{display:block}
 
-  /* INFO BAR */
-  .info-bar{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:12px 18px;margin-bottom:20px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);box-shadow:var(--shadow)}
-  .info-bar strong{color:var(--text)}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:3px}
 
-  /* RESPONSIVE */
-  @media(max-width:768px){
-    .menu-btn{display:flex;align-items:center}
-    aside{transform:translateX(-100%)}
-    aside.open{transform:translateX(0)}
-    main{margin-left:0;padding:16px 14px}
-    .stats-row{grid-template-columns:repeat(2,1fr)}
-    .countdown-row{grid-template-columns:repeat(2,1fr)}
-    .exam-grid{grid-template-columns:1fr}
-    .pref-checks{grid-template-columns:repeat(2,1fr)}
-    .header-search{max-width:200px}
-    .pref-btn span{display:none}
-    .date-display{display:none}
-  }
-  @media(max-width:480px){
-    .stats-row{grid-template-columns:repeat(2,1fr)}
-    .countdown-row{grid-template-columns:1fr 1fr}
-    .header-search{display:none}
-  }
+@media(max-width:768px){
+  .mn-btn{display:flex;align-items:center}
+  aside{transform:translateX(-100%)}aside.op{transform:translateX(0)}
+  main{margin-left:0;padding:13px 11px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cdr{grid-template-columns:repeat(2,1fr)}
+  .eg{grid-template-columns:1fr}
+  .pc{grid-template-columns:repeat(2,1fr)}
+  .h-search{max-width:160px}.h-date{display:none}
+}
+@media(max-width:480px){.h-search{display:none}.cdr{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
-  <button class="menu-btn" id="menuBtn">☰</button>
-  <a class="logo" href="#">
-    <div class="logo-icon">🎯</div>
-    <div class="logo-text">
-      <div class="name">SarkariTracker</div>
-      <div class="tagline">सरकारी परीक्षा | हर अपडेट यहाँ</div>
-    </div>
-  </a>
-  <div class="header-search">
-    <span>🔍</span>
-    <input type="text" id="globalSearch" placeholder="Search exam, state, post..." oninput="handleSearch(this.value)">
+  <button class="mn-btn" id="mnBtn">☰</button>
+  <div class="logo">
+    <div class="logo-i">🎯</div>
+    <div class="logo-t"><div class="logo-n">SarkariTracker</div><div class="logo-s">Live Govt Exam Updates</div></div>
   </div>
-  <div class="header-actions">
-    <span class="live-badge">🔴 LIVE</span>
-    <span class="date-display" id="liveDate"></span>
-    <button class="notif-btn" onclick="navigate('alerts')" title="Notifications">
-      🔔<span class="notif-badge" id="notifBadge">8</span>
-    </button>
-    <button class="pref-btn" onclick="openPref()">⚙️ <span>Preferences</span></button>
+  <div class="h-search"><span style="color:rgba(255,255,255,.6)">🔍</span><input type="text" id="gSrch" placeholder="Search exam, state, post..."></div>
+  <div class="h-right">
+    <span class="live-p">🔴 LIVE</span>
+    <span class="h-date" id="hDate"></span>
+    <div class="nb h-btn" onclick="navigate('alerts')" style="border:none">🔔<span class="nb-dot" id="nbCnt">8</span></div>
+    <button class="h-btn" id="rfBtn" onclick="hardRefresh()"><span class="ri">↻</span> Refresh</button>
+    <button class="h-btn" onclick="openPref()">⚙️ Prefs</button>
   </div>
 </header>
 
-<div class="overlay-bg" id="overlayBg" onclick="closeSidebar()"></div>
+<div class="ovbg" id="ovbg" onclick="closeSB()"></div>
 
-<!-- SIDEBAR -->
-<aside id="sidebar">
-  <div class="sidebar-section">
-    <div class="sidebar-label">Main Menu</div>
-    <a class="sidebar-item active" onclick="navigate('home')" data-page="home"><span class="icon">🏠</span>Dashboard</a>
-    <a class="sidebar-item" onclick="navigate('vacancies')" data-page="vacancies"><span class="icon">📋</span>Vacancies<span class="sidebar-count" id="cnt-vacancies">52</span></a>
-    <a class="sidebar-item" onclick="navigate('admitcard')" data-page="admitcard"><span class="icon">🎫</span>Admit Cards<span class="sidebar-count green">14</span></a>
-    <a class="sidebar-item" onclick="navigate('results')" data-page="results"><span class="icon">📊</span>Results<span class="sidebar-count orange">11</span></a>
-    <a class="sidebar-item" onclick="navigate('news')" data-page="news"><span class="icon">📰</span>News & Updates</a>
-    <a class="sidebar-item" onclick="navigate('alerts')" data-page="alerts"><span class="icon">🔔</span>My Alerts<span class="sidebar-count red" id="cnt-alerts">8</span></a>
-    <a class="sidebar-item" onclick="navigate('saved')" data-page="saved"><span class="icon">⭐</span>Saved Exams</a>
+<aside id="sb">
+  <div class="sb-sec">
+    <div class="sb-lbl">Main Menu</div>
+    <div class="sb-i act" onclick="nav('home')" data-pg="home"><span class="ic">🏠</span>Dashboard</div>
+    <div class="sb-i" onclick="nav('vacancies')" data-pg="vacancies"><span class="ic">📋</span>Vacancies<span class="sb-cnt" id="cnt-v">—</span></div>
+    <div class="sb-i" onclick="nav('admitcard')" data-pg="admitcard"><span class="ic">🎫</span>Admit Cards<span class="sb-cnt g">14</span></div>
+    <div class="sb-i" onclick="nav('results')" data-pg="results"><span class="ic">📊</span>Results<span class="sb-cnt o">11</span></div>
+    <div class="sb-i" onclick="nav('news')" data-pg="news"><span class="ic">📰</span>Live News<span class="sb-cnt r" id="cnt-n">…</span></div>
+    <div class="sb-i" onclick="nav('alerts')" data-pg="alerts"><span class="ic">🔔</span>My Alerts<span class="sb-cnt r" id="cnt-a">8</span></div>
+    <div class="sb-i" onclick="nav('saved')" data-pg="saved"><span class="ic">⭐</span>Saved Exams</div>
   </div>
-  <div class="sidebar-section">
-    <div class="sidebar-label">Central Exams</div>
-    <a class="sidebar-item" onclick="filterByOrg('UPSC')"><span class="icon">🏛️</span>UPSC</a>
-    <a class="sidebar-item" onclick="filterByOrg('SSC')"><span class="icon">📝</span>SSC</a>
-    <a class="sidebar-item" onclick="filterByOrg('Railway')"><span class="icon">🚂</span>Railway (RRB)</a>
-    <a class="sidebar-item" onclick="filterByOrg('Banking')"><span class="icon">🏦</span>Banking (IBPS/SBI)</a>
-    <a class="sidebar-item" onclick="filterByOrg('Defence')"><span class="icon">🎖️</span>Defence</a>
-    <a class="sidebar-item" onclick="filterByOrg('Teaching')"><span class="icon">📚</span>Teaching (CTET)</a>
-    <a class="sidebar-item" onclick="filterByOrg('Police')"><span class="icon">👮</span>Police / Para-military</a>
+  <div class="sb-sec">
+    <div class="sb-lbl">Central Exams</div>
+    <div class="sb-i" onclick="fOrg('UPSC')"><span class="ic">🏛️</span>UPSC</div>
+    <div class="sb-i" onclick="fOrg('SSC')"><span class="ic">📝</span>SSC</div>
+    <div class="sb-i" onclick="fOrg('Railway')"><span class="ic">🚂</span>Railway (RRB)</div>
+    <div class="sb-i" onclick="fOrg('Banking')"><span class="ic">🏦</span>Banking (IBPS/SBI)</div>
+    <div class="sb-i" onclick="fOrg('Defence')"><span class="ic">🎖️</span>Defence</div>
+    <div class="sb-i" onclick="fOrg('Teaching')"><span class="ic">📚</span>Teaching (CTET)</div>
+    <div class="sb-i" onclick="fOrg('Police')"><span class="ic">👮</span>Police</div>
   </div>
-  <div class="sidebar-section">
-    <div class="sidebar-label">State Exams</div>
-    <a class="sidebar-item" onclick="filterByState('UP')"><span class="icon">🗺️</span>Uttar Pradesh</a>
-    <a class="sidebar-item" onclick="filterByState('Bihar')"><span class="icon">🗺️</span>Bihar</a>
-    <a class="sidebar-item" onclick="filterByState('Rajasthan')"><span class="icon">🗺️</span>Rajasthan</a>
-    <a class="sidebar-item" onclick="filterByState('MP')"><span class="icon">🗺️</span>Madhya Pradesh</a>
-    <a class="sidebar-item" onclick="filterByState('Maharashtra')"><span class="icon">🗺️</span>Maharashtra</a>
-    <a class="sidebar-item" onclick="filterByState('Delhi')"><span class="icon">🗺️</span>Delhi</a>
-    <a class="sidebar-item" onclick="filterByState('Jharkhand')"><span class="icon">🗺️</span>Jharkhand</a>
-    <a class="sidebar-item" onclick="filterByState('All')"><span class="icon">🇮🇳</span>All States</a>
+  <div class="sb-sec">
+    <div class="sb-lbl">State Exams</div>
+    <div class="sb-i" onclick="fState('UP')"><span class="ic">🗺️</span>Uttar Pradesh</div>
+    <div class="sb-i" onclick="fState('Bihar')"><span class="ic">🗺️</span>Bihar</div>
+    <div class="sb-i" onclick="fState('Rajasthan')"><span class="ic">🗺️</span>Rajasthan</div>
+    <div class="sb-i" onclick="fState('MP')"><span class="ic">🗺️</span>Madhya Pradesh</div>
+    <div class="sb-i" onclick="fState('Maharashtra')"><span class="ic">🗺️</span>Maharashtra</div>
+    <div class="sb-i" onclick="fState('Delhi')"><span class="ic">🗺️</span>Delhi</div>
+    <div class="sb-i" onclick="fState('All')"><span class="ic">🇮🇳</span>All States</div>
   </div>
-  <div class="sidebar-section">
-    <div class="sidebar-label">Quick Links</div>
-    <a class="sidebar-item" href="https://upsc.gov.in" target="_blank"><span class="icon">🔗</span>upsc.gov.in ↗</a>
-    <a class="sidebar-item" href="https://ssc.nic.in" target="_blank"><span class="icon">🔗</span>ssc.nic.in ↗</a>
-    <a class="sidebar-item" href="https://ibps.in" target="_blank"><span class="icon">🔗</span>ibps.in ↗</a>
-    <a class="sidebar-item" href="https://indianrailways.gov.in" target="_blank"><span class="icon">🔗</span>indianrailways.gov.in ↗</a>
+  <div class="sb-sec">
+    <div class="sb-lbl">Official Portals (Direct)</div>
+    <a class="sb-i" href="https://ssc.nic.in/Portal/Notifications" target="_blank"><span class="ic">📝</span>SSC Notifications ↗</a>
+    <a class="sb-i" href="https://upsconline.gov.in" target="_blank"><span class="ic">🏛️</span>UPSC Apply ↗</a>
+    <a class="sb-i" href="https://upsc.gov.in/examinations/e-admit-card" target="_blank"><span class="ic">🎫</span>UPSC Admit Card ↗</a>
+    <a class="sb-i" href="https://upsc.gov.in/examinations/results" target="_blank"><span class="ic">📊</span>UPSC Results ↗</a>
+    <a class="sb-i" href="https://rrbapply.gov.in" target="_blank"><span class="ic">🚂</span>RRB Apply ↗</a>
+    <a class="sb-i" href="https://ibps.in" target="_blank"><span class="ic">🏦</span>IBPS ↗</a>
+    <a class="sb-i" href="https://sbi.co.in/careers" target="_blank"><span class="ic">🏦</span>SBI Careers ↗</a>
+    <a class="sb-i" href="https://ctet.nic.in" target="_blank"><span class="ic">📚</span>CTET ↗</a>
   </div>
 </aside>
 
-<div class="layout">
-<main id="main">
+<div class="wrap">
+<main>
 
-  <!-- ═══ HOME ═══ -->
-  <div class="page active" id="page-home">
-    <div class="info-bar">
-      📅 <strong>आज: 18 जून 2026</strong> — नीचे सभी updates आज की तारीख तक के latest हैं। किसी भी card या news पर click करने पर सीधे official source पर जाएंगे।
-    </div>
-
-    <!-- TICKER -->
-    <div class="ticker-wrap">
-      <span class="ticker-label">🔴 LIVE</span>
-      <div class="ticker-inner">
-        <span class="ticker-text" onclick="navigate('news')">
-          🚨 SSC CGL 2026 – 19,000+ Posts – Apply Before 15 July 2026 | ssc.nic.in &nbsp;•&nbsp;
-          📋 UPSC CSE 2026 Prelims – Admit Card OUT – Exam: 28 June 2026 &nbsp;•&nbsp;
-          🚂 RRB NTPC 2026 – Phase II CBT – Dates Released – rrbapply.gov.in &nbsp;•&nbsp;
-          🏦 IBPS PO 2026 – Notification Expected July 2026 &nbsp;•&nbsp;
-          🎖️ NDA NA I 2026 Result – Declared – Check upsc.gov.in &nbsp;•&nbsp;
-          👮 UP Police SI 2026 – 2430 Posts – Last Date: 30 June 2026 &nbsp;•&nbsp;
-          📊 BPSC 71st CCE – Result Declared – bpsc.bih.nic.in &nbsp;•&nbsp;
-          🏛️ RPSC RAS 2025 Mains – Date Announced: 12 Aug 2026 | rpsc.rajasthan.gov.in &nbsp;•&nbsp;
-          📚 CTET June 2026 – Admit Card Released – ctet.nic.in
-        </span>
-      </div>
-    </div>
-
-    <!-- STATS -->
-    <div class="stats-row">
-      <div class="stat-card" onclick="navigate('vacancies')">
-        <div class="stat-icon" style="background:#dbeafe">📋</div>
-        <div class="stat-info"><div class="num" style="color:var(--primary)">52</div><div class="lbl">Active Vacancies</div><div class="chg up">↑ 8 this week</div></div>
-      </div>
-      <div class="stat-card" onclick="navigate('admitcard')">
-        <div class="stat-icon" style="background:#d1fae5">🎫</div>
-        <div class="stat-info"><div class="num" style="color:var(--secondary)">14</div><div class="lbl">Admit Cards Live</div><div class="chg up">↑ 4 today</div></div>
-      </div>
-      <div class="stat-card" onclick="navigate('results')">
-        <div class="stat-icon" style="background:#fff3cd">📊</div>
-        <div class="stat-info"><div class="num" style="color:var(--warning)">11</div><div class="lbl">Results Declared</div><div class="chg up">↑ 3 this week</div></div>
-      </div>
-      <div class="stat-card" onclick="navigate('vacancies')">
-        <div class="stat-icon" style="background:#fee2e2">⚠️</div>
-        <div class="stat-info"><div class="num" style="color:var(--danger)">7</div><div class="lbl">Closing This Week</div><div class="chg down">Urgent – Apply Now</div></div>
-      </div>
-    </div>
-
-    <!-- COUNTDOWN -->
-    <div class="section-hdr"><h2>⏳ Deadline Countdowns – Apply Before It's Too Late!</h2><a onclick="navigate('vacancies')">View all →</a></div>
-    <div class="countdown-row" id="countdownRow"></div>
-
-    <!-- TRENDING NEWS -->
-    <div class="section-hdr"><h2>🔥 आज की Latest News & Updates</h2><a onclick="navigate('news')">More news →</a></div>
-    <div class="news-list" id="homeNewsList"></div>
-
-    <!-- LATEST VACANCIES -->
-    <div class="section-hdr" style="margin-top:24px"><h2>📋 Latest Vacancies – June 2026</h2><a onclick="navigate('vacancies')">View all →</a></div>
-    <div class="exam-grid" id="homeExamGrid"></div>
+<!-- HOME -->
+<div class="pg act" id="page-home">
+  <div class="sbar">
+    📅 <strong id="todayLbl">Loading...</strong>
+    <span style="color:var(--mu)">•</span>
+    <span style="color:var(--mu)">News auto-fetches on open. Static exam data updated regularly.</span>
+    <div class="fs"><div class="fd ld" id="fDot"></div><span id="fTxt">Fetching live news...</span></div>
   </div>
-
-  <!-- ═══ VACANCIES ═══ -->
-  <div class="page" id="page-vacancies">
-    <div class="section-hdr">
-      <h2>📋 All Active Vacancies – June 2026</h2>
-      <span style="font-size:13px;color:var(--muted)">Showing <b id="vacancyCount">52</b> vacancies</span>
-    </div>
-    <div class="chips" id="vacancyChips"></div>
-    <div class="exam-grid" id="allVacancyGrid"></div>
+  <div class="tick"><span class="tick-l">🔴 LIVE</span><div class="tick-in"><span class="tick-t" id="tickTxt">Fetching latest updates...</span></div></div>
+  <div class="stats">
+    <div class="stat" onclick="nav('vacancies')"><div class="st-ic" style="background:#dbeafe">📋</div><div><div class="st-n" style="color:var(--p)" id="sv">—</div><div class="st-l">Active Vacancies</div><div class="st-c up" id="svt">Loading...</div></div></div>
+    <div class="stat" onclick="nav('admitcard')"><div class="st-ic" style="background:#d1fae5">🎫</div><div><div class="st-n" style="color:var(--g)">14</div><div class="st-l">Admit Cards</div><div class="st-c up">↑ Updated today</div></div></div>
+    <div class="stat" onclick="nav('results')"><div class="st-ic" style="background:#fef3c7">📊</div><div><div class="st-n" style="color:var(--w)">11</div><div class="st-l">Results Out</div><div class="st-c up">↑ Updated today</div></div></div>
+    <div class="stat" onclick="nav('news')"><div class="st-ic" style="background:#fee2e2">📰</div><div><div class="st-n" style="color:var(--d)" id="sn">—</div><div class="st-l">Live News Items</div><div class="st-c dn" id="snt">Fetching...</div></div></div>
   </div>
+  <div class="sh"><h2>⏳ Apply Before It's Too Late</h2><span class="lk" onclick="nav('vacancies')">All →</span></div>
+  <div class="cdr" id="cdRow"></div>
+  <div class="sh"><h2>🔥 Latest Live News</h2><span class="lk" onclick="nav('news')">All news →</span></div>
+  <div id="homeNewsArea"><div class="skel-wrap" id="homeSkel"></div></div>
+  <div class="sh" style="margin-top:20px"><h2>📋 Active Vacancies</h2><span class="lk" onclick="nav('vacancies')">All →</span></div>
+  <div class="eg" id="homeGrid"></div>
+</div>
 
-  <!-- ═══ ADMIT CARDS ═══ -->
-  <div class="page" id="page-admitcard">
-    <div class="section-hdr"><h2>🎫 Admit Cards – June 2026</h2><span style="font-size:12px;color:var(--muted)">Click Download to go to official website</span></div>
-    <div class="table-wrap">
-      <table class="data-table">
-        <thead><tr><th>Exam Name</th><th>Organization</th><th>Exam Date</th><th>Status</th><th>Action</th></tr></thead>
-        <tbody id="admitTableBody"></tbody>
-      </table>
-    </div>
-  </div>
+<!-- VACANCIES -->
+<div class="pg" id="page-vacancies">
+  <div class="sh"><h2>📋 All Active Vacancies</h2><span style="font-size:11px;color:var(--mu)">Showing <b id="vCnt">—</b> exams</span></div>
+  <div class="chips" id="vChips"></div>
+  <div class="eg" id="vGrid"></div>
+</div>
 
-  <!-- ═══ RESULTS ═══ -->
-  <div class="page" id="page-results">
-    <div class="section-hdr"><h2>📊 Results – June 2026</h2><span style="font-size:12px;color:var(--muted)">Click Check to go to official website</span></div>
-    <div class="table-wrap">
-      <table class="data-table">
-        <thead><tr><th>Exam Name</th><th>Organization</th><th>Result Date</th><th>Status</th><th>Action</th></tr></thead>
-        <tbody id="resultTableBody"></tbody>
-      </table>
-    </div>
-  </div>
+<!-- ADMIT CARDS -->
+<div class="pg" id="page-admitcard">
+  <div class="sh"><h2>🎫 Admit Cards</h2><span style="font-size:11px;color:var(--mu)">Click Download → Direct admit card page</span></div>
+  <div class="tw"><table class="dt"><thead><tr><th>Exam</th><th>Org</th><th>Exam Date</th><th>Status</th><th>Direct Link</th></tr></thead><tbody id="admitBody"></tbody></table></div>
+</div>
 
-  <!-- ═══ NEWS ═══ -->
-  <div class="page" id="page-news">
-    <div class="section-hdr"><h2>📰 News & Updates – June 2026</h2><span style="font-size:12px;color:var(--muted)">Click any news to go to source</span></div>
-    <div class="chips">
-      <span class="chip active" onclick="filterNews('all',this)">All</span>
-      <span class="chip" onclick="filterNews('official',this)">✅ Official</span>
-      <span class="chip" onclick="filterNews('trending',this)">🔥 Trending</span>
-      <span class="chip" onclick="filterNews('teacher',this)">📚 YouTube/Teachers</span>
-      <span class="chip" onclick="filterNews('state',this)">🗺️ State Updates</span>
-    </div>
-    <div class="news-list" id="fullNewsList"></div>
-  </div>
+<!-- RESULTS -->
+<div class="pg" id="page-results">
+  <div class="sh"><h2>📊 Results</h2><span style="font-size:11px;color:var(--mu)">Click Check → Direct result page</span></div>
+  <div class="tw"><table class="dt"><thead><tr><th>Exam</th><th>Org</th><th>Date</th><th>Status</th><th>Direct Link</th></tr></thead><tbody id="resultBody"></tbody></table></div>
+</div>
 
-  <!-- ═══ ALERTS ═══ -->
-  <div class="page" id="page-alerts">
-    <div class="section-hdr">
-      <h2>🔔 My Alerts & Notifications</h2>
-      <button class="btn btn-outline" style="font-size:12px;padding:6px 14px" onclick="markAllRead()">Mark all read</button>
-    </div>
-    <div class="alert-list" id="alertList"></div>
+<!-- LIVE NEWS -->
+<div class="pg" id="page-news">
+  <div class="sh">
+    <h2>📰 Live News <span class="lv">LIVE</span></h2>
+    <button onclick="hardRefresh()" style="font-size:11px;background:var(--pl);color:var(--p);border:1px solid var(--p);padding:5px 11px;border-radius:6px;cursor:pointer;font-weight:600">↻ Refresh Now</button>
   </div>
+  <div class="chips">
+    <span class="chip act" onclick="fNews('all',this)">All</span>
+    <span class="chip" onclick="fNews('vacancy',this)">💼 Vacancy</span>
+    <span class="chip" onclick="fNews('admitcard',this)">🎫 Admit Card</span>
+    <span class="chip" onclick="fNews('result',this)">📊 Result</span>
+    <span class="chip" onclick="fNews('upsc',this)">🏛️ UPSC</span>
+    <span class="chip" onclick="fNews('ssc',this)">📝 SSC</span>
+    <span class="chip" onclick="fNews('railway',this)">🚂 Railway</span>
+    <span class="chip" onclick="fNews('banking',this)">🏦 Banking</span>
+    <span class="chip" onclick="fNews('state',this)">🗺️ State</span>
+  </div>
+  <div class="skel-wrap" id="newsSkel" style="display:none"></div>
+  <div class="nl2" id="newsArea"></div>
+</div>
 
-  <!-- ═══ SAVED ═══ -->
-  <div class="page" id="page-saved">
-    <div class="section-hdr"><h2>⭐ Saved Exams</h2></div>
-    <div class="exam-grid" id="savedGrid"></div>
-    <div class="empty" id="savedEmpty" style="display:none">
-      <div class="ei">⭐</div><h3>No saved exams yet</h3><p>Click the ★ icon on any exam card to save it here</p>
-    </div>
-  </div>
+<!-- ALERTS -->
+<div class="pg" id="page-alerts">
+  <div class="sh"><h2>🔔 My Alerts</h2><button onclick="markRead()" class="btn btn-o" style="font-size:11px;padding:5px 11px">Mark all read</button></div>
+  <div class="al" id="alList"></div>
+</div>
+
+<!-- SAVED -->
+<div class="pg" id="page-saved">
+  <div class="sh"><h2>⭐ Saved Exams</h2></div>
+  <div class="eg" id="savedGrid"></div>
+  <div class="emp" id="savedEmp" style="display:none"><div class="emp-i">⭐</div><h3>No saved exams</h3><p>Click ★ on any card to save</p></div>
+</div>
 
 </main>
 </div>
 
-<!-- PREFERENCES MODAL -->
-<div class="overlay" id="prefOverlay">
-  <div class="modal">
-    <div class="modal-header">
-      <h3>⚙️ My Preferences</h3>
-      <button class="modal-close" onclick="closePref()">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="pref-section"><h4>📋 Central Exam Categories</h4><div class="pref-checks" id="centralPrefChecks"></div></div>
-      <div class="pref-section"><h4>🗺️ States (State-level exams)</h4><div class="pref-checks" id="statePrefChecks"></div></div>
-      <div class="pref-section"><h4>🔔 Alert Types</h4><div class="pref-checks" id="alertPrefChecks"></div></div>
-      <div class="pref-section"><h4>📰 News Sources</h4><div class="pref-checks" id="newsPrefChecks"></div></div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" onclick="closePref()">Cancel</button>
-      <button class="btn btn-primary" onclick="savePreferences()">💾 Save Preferences</button>
-    </div>
+<!-- PREFS -->
+<div class="ov" id="prefOv"><div class="md">
+  <div class="md-h"><h3>⚙️ My Preferences</h3><button class="md-cl" onclick="closePref()">✕</button></div>
+  <div class="md-b">
+    <div class="ps"><h4>📋 Central Exams</h4><div class="pc" id="cp"></div></div>
+    <div class="ps"><h4>🗺️ States</h4><div class="pc" id="sp"></div></div>
+    <div class="ps"><h4>🔔 Alert Types</h4><div class="pc" id="ap"></div></div>
+    <div class="ps"><h4>📰 News Sources</h4><div class="pc" id="np"></div></div>
   </div>
-</div>
+  <div class="md-f"><button class="btn btn-o" onclick="closePref()">Cancel</button><button class="btn btn-p" onclick="savePrefs()">💾 Save</button></div>
+</div></div>
 
-<div id="toast-container"></div>
+<div id="toasts"></div>
 
 <script>
-// ══════════════════════════════════════════════
-//  TODAY'S DATE (18 June 2026)
-// ══════════════════════════════════════════════
-const TODAY = new Date('2026-06-18');
-function getDaysLeft(dateStr) {
-  const target = new Date(dateStr);
-  const diff = Math.ceil((target - TODAY) / (1000*60*60*24));
-  return diff;
+// ═══════════════════════════════════════════════════
+//  DATE UTILITIES (always real today's date)
+// ═══════════════════════════════════════════════════
+const NOW = new Date();
+const YEAR = NOW.getFullYear();
+const MONTH = NOW.getMonth() + 1; // 1-12
+
+function nextOccurrence(m, d) {
+  // returns next occurrence of month/day from today
+  const dt = new Date(YEAR, m - 1, d);
+  if (dt <= NOW) dt.setFullYear(YEAR + 1);
+  return dt.toISOString().split('T')[0];
 }
-function formatDaysLeft(days) {
-  if (days < 0) return { text: 'Expired', cls: 'val' };
-  if (days === 0) return { text: 'Today! ⚠️', cls: 'val urgent' };
-  if (days <= 7) return { text: days + ' days left ⚠️', cls: 'val urgent' };
-  if (days <= 30) return { text: days + ' days left', cls: 'val' };
-  return { text: days + ' days left', cls: 'val active' };
+function daysLeft(ds) {
+  const t = new Date(ds); t.setHours(23,59,59);
+  return Math.ceil((t - NOW) / 864e5);
+}
+function dlFmt(d) {
+  if (d < 0) return { t: 'Expired', c: '' };
+  if (d === 0) return { t: 'Today! ⚠️', c: 'urg' };
+  if (d <= 5) return { t: d + ' days ⚠️', c: 'urg' };
+  if (d <= 30) return { t: d + ' days left', c: '' };
+  return { t: d + ' days left', c: 'ok' };
+}
+function fDate(d) { return d.toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' }); }
+function fTime(d) { return d.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit' }); }
+function ago(ds) {
+  if (!ds) return 'Recent';
+  const d = new Date(ds), diff = (Date.now() - d) / 1000;
+  if (diff < 3600) return Math.floor(diff / 60) + ' min ago';
+  if (diff < 86400) return Math.floor(diff / 3600) + ' hrs ago';
+  if (diff < 604800) return Math.floor(diff / 86400) + ' days ago';
+  return fDate(d);
 }
 
-// Show live date in header
-document.getElementById('liveDate').textContent = TODAY.toLocaleDateString('hi-IN', { weekday:'short', day:'numeric', month:'long', year:'numeric' });
+// Update header
+document.getElementById('hDate').textContent = fDate(NOW);
+document.getElementById('todayLbl').textContent = 'Today: ' + NOW.toLocaleDateString('hi-IN', { weekday:'short', day:'numeric', month:'long', year:'numeric' });
 
-// ══════════════════════════════════════════════
-//  EXAM DATA – June 2026 (with real official links)
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+//  OFFICIAL DEEP-LINK MAP
+//  Each org has: apply, admitCard, result, info URLs
+// ═══════════════════════════════════════════════════
+const PORTALS = {
+  SSC:        { apply:'https://ssc.nic.in/Portal/SchemeExamination', admit:'https://ssc.nic.in/Portal/AdmitCard', result:'https://ssc.nic.in/Portal/Results', info:'https://ssc.nic.in/Portal/Notifications' },
+  UPSC:       { apply:'https://upsconline.gov.in', admit:'https://upsc.gov.in/examinations/e-admit-card', result:'https://upsc.gov.in/examinations/results', info:'https://upsc.gov.in/examinations/active-examinations' },
+  RRB:        { apply:'https://rrbapply.gov.in', admit:'https://rrbapply.gov.in', result:'https://rrbapply.gov.in', info:'https://indianrailways.gov.in' },
+  IBPS:       { apply:'https://ibps.in/ibps-po-recruitment/', admit:'https://ibps.in/ibps-po-admit-card/', result:'https://ibps.in/ibps-po-result/', info:'https://ibps.in' },
+  'IBPS Clerk': { apply:'https://ibps.in/ibps-clerk-recruitment/', admit:'https://ibps.in/ibps-clerk-admit-card/', result:'https://ibps.in/ibps-clerk-result/', info:'https://ibps.in' },
+  SBI:        { apply:'https://bank.sbi/careers', admit:'https://bank.sbi/careers', result:'https://bank.sbi/careers', info:'https://sbi.co.in/careers' },
+  CTET:       { apply:'https://ctet.nic.in', admit:'https://ctet.nic.in/WebInfo/Page/Page?PageId=3&LangId=P', result:'https://cbseresults.nic.in', info:'https://ctet.nic.in' },
+  NDA:        { apply:'https://upsconline.gov.in', admit:'https://upsc.gov.in/examinations/e-admit-card', result:'https://upsc.gov.in/examinations/results', info:'https://upsc.gov.in' },
+  BPSC:       { apply:'https://onlinebpsc.bihar.gov.in', admit:'https://onlinebpsc.bihar.gov.in', result:'https://bpsc.bih.nic.in', info:'https://bpsc.bih.nic.in' },
+  RPSC:       { apply:'https://rpsc.rajasthan.gov.in', admit:'https://rpsc.rajasthan.gov.in', result:'https://rpsc.rajasthan.gov.in/LatestNews', info:'https://rpsc.rajasthan.gov.in' },
+  UPPRPB:     { apply:'https://uppbpb.gov.in', admit:'https://uppbpb.gov.in', result:'https://uppbpb.gov.in', info:'https://uppbpb.gov.in' },
+  UPSSSC:     { apply:'https://upsssc.gov.in', admit:'https://upsssc.gov.in', result:'https://upsssc.gov.in', info:'https://upsssc.gov.in' },
+  UPPSC:      { apply:'https://uppsc.up.nic.in', admit:'https://uppsc.up.nic.in', result:'https://uppsc.up.nic.in', info:'https://uppsc.up.nic.in' },
+  Mahapariksha:{ apply:'https://mahapariksha.gov.in', admit:'https://mahapariksha.gov.in', result:'https://mahapariksha.gov.in', info:'https://mahapariksha.gov.in' },
+  JSSC:       { apply:'https://jssc.nic.in', admit:'https://jssc.nic.in', result:'https://jssc.nic.in', info:'https://jssc.nic.in' },
+  MPPolice:   { apply:'https://mponline.gov.in', admit:'https://mponline.gov.in', result:'https://mponline.gov.in', info:'https://mponline.gov.in' },
+};
+
+// ═══════════════════════════════════════════════════
+//  EXAM DATABASE (dynamic year, real deep links)
+// ═══════════════════════════════════════════════════
 const EXAMS = [
   {
-    id:1, name:'SSC CGL 2026', org:'Staff Selection Commission', icon:'📝',
-    category:'SSC', state:'Central', posts:19000, lastDate:'2026-07-15',
-    examDate:'Sep–Oct 2026', salary:'₹35,400–1,12,400', status:'open',
-    type:'Graduation', tags:['SSC','Central Govt','Multi-Post'], trending:true, isNew:true,
-    applyLink:'https://ssc.nic.in',
-    notifLink:'https://ssc.nic.in/Portal/Notifications'
+    id:1, name:'SSC CGL', org:'Staff Selection Commission', icon:'📝', cat:'SSC', state:'Central',
+    posts:19000, lastDate:nextOccurrence(7,15), examDate:'Sep–Oct', salary:'₹35,400–1,12,400',
+    status:'open', tags:['SSC','Graduate','Multi-Post'], isNew:true,
+    portal:'SSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ssc.nic.in/Portal/SchemeExamination',
+    admitUrl:'https://ssc.nic.in/Portal/AdmitCard',
+    resultUrl:'https://ssc.nic.in/Portal/Results',
+    infoUrl:'https://ssc.nic.in/Portal/Notifications'
   },
   {
-    id:2, name:'UPSC CSE (IAS/IPS) 2026', org:'Union Public Service Commission', icon:'🏛️',
-    category:'UPSC', state:'Central', posts:1056, lastDate:'2026-02-18',
-    examDate:'Prelims: 28 Jun 2026', salary:'₹56,100+', status:'admitcard',
-    type:'Graduation', tags:['UPSC','IAS/IPS','Grade A'], trending:true, isNew:false,
-    applyLink:'https://upsc.gov.in',
-    notifLink:'https://upsc.gov.in/examinations/active-examinations'
+    id:2, name:'UPSC CSE (IAS/IPS)', org:'Union Public Service Commission', icon:'🏛️', cat:'UPSC', state:'Central',
+    posts:1056, lastDate:nextOccurrence(2,18), examDate:'Jun (Prelims)', salary:'₹56,100+',
+    status:'admitcard', tags:['UPSC','IAS','IPS'], isNew:false,
+    portal:'UPSC', showApply:false, showAdmit:true, showResult:false,
+    applyUrl:'https://upsconline.gov.in',
+    admitUrl:'https://upsc.gov.in/examinations/e-admit-card',
+    resultUrl:'https://upsc.gov.in/examinations/results',
+    infoUrl:'https://upsc.gov.in/examinations/active-examinations'
   },
   {
-    id:3, name:'RRB NTPC 2026 – Phase II CBT', org:'Railway Recruitment Board', icon:'🚂',
-    category:'Railway', state:'Central', posts:11558, lastDate:'2026-07-10',
-    examDate:'Jul–Aug 2026', salary:'₹19,900–35,400', status:'open',
-    type:'10th/12th/Grad', tags:['Railway','RRB','NTPC'], trending:true, isNew:true,
-    applyLink:'https://rrbapply.gov.in',
-    notifLink:'https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,554'
+    id:3, name:'RRB NTPC', org:'Railway Recruitment Board', icon:'🚂', cat:'Railway', state:'Central',
+    posts:11558, lastDate:nextOccurrence(8,10), examDate:'Jul–Aug (CBT)', salary:'₹19,900–35,400',
+    status:'open', tags:['Railway','RRB','NTPC'], isNew:true,
+    portal:'RRB', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://rrbapply.gov.in',
+    admitUrl:'https://rrbapply.gov.in',
+    resultUrl:'https://rrbapply.gov.in',
+    infoUrl:'https://indianrailways.gov.in'
   },
   {
-    id:4, name:'UP Police SI (Sub Inspector) 2026', org:'UP Police Recruitment Board', icon:'👮',
-    category:'Police', state:'UP', posts:2430, lastDate:'2026-06-30',
-    examDate:'Aug 2026', salary:'₹35,400+', status:'open',
-    type:'Graduation', tags:['UP','SI','Police'], trending:true, isNew:true,
-    applyLink:'https://uppbpb.gov.in',
-    notifLink:'https://uppbpb.gov.in'
+    id:4, name:'IBPS PO', org:'Institute of Banking Personnel Selection', icon:'🏦', cat:'Banking', state:'Central',
+    posts:5500, lastDate:nextOccurrence(8,5), examDate:'Oct (Prelims)', salary:'₹52,000+',
+    status:'open', tags:['IBPS','PO','Banking'], isNew:true,
+    portal:'IBPS', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ibps.in/ibps-po-recruitment/',
+    admitUrl:'https://ibps.in/ibps-po-admit-card/',
+    resultUrl:'https://ibps.in/ibps-po-result/',
+    infoUrl:'https://ibps.in'
   },
   {
-    id:5, name:'BPSC 72nd Combined CCE 2026', org:'Bihar Public Service Commission', icon:'🗺️',
-    category:'State PSC', state:'Bihar', posts:2100, lastDate:'2026-07-20',
-    examDate:'Oct 2026', salary:'₹53,100+', status:'open',
-    type:'Graduation', tags:['Bihar','PSC','State Govt'], isNew:true,
-    applyLink:'https://bpsc.bih.nic.in',
-    notifLink:'https://bpsc.bih.nic.in/advt/comb.htm'
+    id:5, name:'SBI Clerk (Junior Associate)', org:'State Bank of India', icon:'🏦', cat:'Banking', state:'Central',
+    posts:14000, lastDate:nextOccurrence(7,18), examDate:'Aug–Sep', salary:'₹26,000+',
+    status:'open', tags:['SBI','Clerk','Banking'], isNew:true,
+    portal:'SBI', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://bank.sbi/careers',
+    admitUrl:'https://bank.sbi/careers',
+    resultUrl:'https://bank.sbi/careers',
+    infoUrl:'https://sbi.co.in/careers'
   },
   {
-    id:6, name:'IBPS PO 2026', org:'Institute of Banking Personnel Selection', icon:'🏦',
-    category:'Banking', state:'Central', posts:5500, lastDate:'2026-08-05',
-    examDate:'Oct 2026', salary:'₹52,000+', status:'open',
-    type:'Graduation', tags:['Banking','PO','IBPS'], isNew:true,
-    applyLink:'https://ibps.in',
-    notifLink:'https://ibps.in/ibps-po-recruitment/'
+    id:6, name:'NDA & NA II', org:'UPSC / Ministry of Defence', icon:'🎖️', cat:'Defence', state:'Central',
+    posts:406, lastDate:nextOccurrence(7,29), examDate:'Sep (Exam)', salary:'₹56,100+',
+    status:'open', tags:['NDA','Defence','12th PCM'], isNew:true,
+    portal:'NDA', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://upsconline.gov.in',
+    admitUrl:'https://upsc.gov.in/examinations/e-admit-card',
+    resultUrl:'https://upsc.gov.in/examinations/results',
+    infoUrl:'https://upsc.gov.in'
   },
   {
-    id:7, name:'SSC CHSL 2026', org:'Staff Selection Commission', icon:'📝',
-    category:'SSC', state:'Central', posts:4500, lastDate:'2026-07-25',
-    examDate:'Sep 2026', salary:'₹25,500+', status:'open',
-    type:'12th Pass', tags:['SSC','CHSL','LDC/DEO'], isNew:true,
-    applyLink:'https://ssc.nic.in',
-    notifLink:'https://ssc.nic.in/Portal/Notifications'
+    id:7, name:'SSC CHSL', org:'Staff Selection Commission', icon:'📝', cat:'SSC', state:'Central',
+    posts:4500, lastDate:nextOccurrence(7,25), examDate:'Sep (Tier I)', salary:'₹25,500+',
+    status:'open', tags:['SSC','CHSL','12th Pass'], isNew:true,
+    portal:'SSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ssc.nic.in/Portal/SchemeExamination',
+    admitUrl:'https://ssc.nic.in/Portal/AdmitCard',
+    resultUrl:'https://ssc.nic.in/Portal/Results',
+    infoUrl:'https://ssc.nic.in/Portal/Notifications'
   },
   {
-    id:8, name:'RPSC RAS/RTS 2026', org:'Rajasthan Public Service Commission', icon:'🗺️',
-    category:'State PSC', state:'Rajasthan', posts:900, lastDate:'2026-07-31',
-    examDate:'Prelims: Sep 2026', salary:'₹53,100+', status:'open',
-    type:'Graduation', tags:['Rajasthan','RAS','State'], isNew:true,
-    applyLink:'https://rpsc.rajasthan.gov.in',
-    notifLink:'https://rpsc.rajasthan.gov.in/LatestNews'
+    id:8, name:'CTET (Central TET)', org:'CBSE', icon:'📚', cat:'Teaching', state:'Central',
+    posts:'Eligibility', lastDate:nextOccurrence(4,25), examDate:'Jun–Jul (Exam)', salary:'Eligibility',
+    status:'admitcard', tags:['CTET','Teaching','B.Ed'], isNew:true,
+    portal:'CTET', showApply:false, showAdmit:true, showResult:false,
+    applyUrl:'https://ctet.nic.in',
+    admitUrl:'https://ctet.nic.in/WebInfo/Page/Page?PageId=3&LangId=P',
+    resultUrl:'https://cbseresults.nic.in',
+    infoUrl:'https://ctet.nic.in'
   },
   {
-    id:9, name:'CTET June 2026', org:'Central Board of Secondary Education', icon:'📚',
-    category:'Teaching', state:'Central', posts:'Unlimited', lastDate:'2026-04-25',
-    examDate:'Jun 28–Jul 6, 2026', salary:'Eligibility Test', status:'admitcard',
-    type:'B.Ed/Diploma', tags:['CTET','Teaching','CBSE'], isNew:false,
-    applyLink:'https://ctet.nic.in',
-    notifLink:'https://ctet.nic.in/WebInfo/Page/Page?PageId=1&LangId=P'
+    id:9, name:'BPSC CCE', org:'Bihar Public Service Commission', icon:'🗺️', cat:'State PSC', state:'Bihar',
+    posts:2100, lastDate:nextOccurrence(7,20), examDate:'Oct (Prelims)', salary:'₹53,100+',
+    status:'open', tags:['BPSC','Bihar','State PSC'], isNew:true,
+    portal:'BPSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://onlinebpsc.bihar.gov.in',
+    admitUrl:'https://onlinebpsc.bihar.gov.in',
+    resultUrl:'https://bpsc.bih.nic.in',
+    infoUrl:'https://bpsc.bih.nic.in'
   },
   {
-    id:10, name:'NDA & NA II 2026', org:'UPSC / Ministry of Defence', icon:'🎖️',
-    category:'Defence', state:'Central', posts:406, lastDate:'2026-07-29',
-    examDate:'Sep 13, 2026', salary:'₹56,100+', status:'open',
-    type:'12th Pass (PCM)', tags:['Defence','NDA','Military'], isNew:true,
-    applyLink:'https://upsconline.gov.in',
-    notifLink:'https://upsc.gov.in/examinations/active-examinations'
+    id:10, name:'RPSC RAS', org:'Rajasthan Public Service Commission', icon:'🗺️', cat:'State PSC', state:'Rajasthan',
+    posts:900, lastDate:nextOccurrence(7,31), examDate:'Sep (Prelims)', salary:'₹53,100+',
+    status:'open', tags:['RPSC','RAS','Rajasthan'], isNew:true,
+    portal:'RPSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://rpsc.rajasthan.gov.in',
+    admitUrl:'https://rpsc.rajasthan.gov.in',
+    resultUrl:'https://rpsc.rajasthan.gov.in/LatestNews',
+    infoUrl:'https://rpsc.rajasthan.gov.in'
   },
   {
-    id:11, name:'SBI Clerk (Junior Associate) 2026', org:'State Bank of India', icon:'🏦',
-    category:'Banking', state:'Central', posts:14000, lastDate:'2026-07-18',
-    examDate:'Aug–Sep 2026', salary:'₹26,000+', status:'open',
-    type:'Graduation', tags:['SBI','Banking','Clerk'], isNew:true,
-    applyLink:'https://sbi.co.in/careers',
-    notifLink:'https://sbi.co.in/careers'
+    id:11, name:'UP Police SI', org:'UP Police Recruitment Board', icon:'👮', cat:'Police', state:'UP',
+    posts:2430, lastDate:nextOccurrence(6,30), examDate:'Aug (Exam)', salary:'₹35,400+',
+    status:'open', tags:['UP','SI','Police'], isNew:true,
+    portal:'UPPRPB', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://uppbpb.gov.in',
+    admitUrl:'https://uppbpb.gov.in',
+    resultUrl:'https://uppbpb.gov.in',
+    infoUrl:'https://uppbpb.gov.in'
   },
   {
-    id:12, name:'Delhi Police Constable 2026', org:'Staff Selection Commission', icon:'👮',
-    category:'Police', state:'Delhi', posts:6000, lastDate:'2026-08-10',
-    examDate:'Oct 2026', salary:'₹21,700+', status:'open',
-    type:'12th Pass', tags:['Delhi','Police','Constable'], isNew:true,
-    applyLink:'https://ssc.nic.in',
-    notifLink:'https://ssc.nic.in/Portal/Notifications'
+    id:12, name:'SSC MTS', org:'Staff Selection Commission', icon:'📝', cat:'SSC', state:'Central',
+    posts:9583, lastDate:nextOccurrence(8,1), examDate:'Oct–Nov', salary:'₹18,000+',
+    status:'open', tags:['SSC','MTS','10th Pass'], isNew:true,
+    portal:'SSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ssc.nic.in/Portal/SchemeExamination',
+    admitUrl:'https://ssc.nic.in/Portal/AdmitCard',
+    resultUrl:'https://ssc.nic.in/Portal/Results',
+    infoUrl:'https://ssc.nic.in/Portal/Notifications'
   },
   {
-    id:13, name:'UPSSSC PET 2026', org:'UP Subordinate Service Selection Commission', icon:'📋',
-    category:'State PSC', state:'UP', posts:'Various', lastDate:'2026-08-20',
-    examDate:'Nov 2026', salary:'Various', status:'open',
-    type:'10th Pass', tags:['UP','UPSSSC','PET'], isNew:true,
-    applyLink:'https://upsssc.gov.in',
-    notifLink:'https://upsssc.gov.in'
+    id:13, name:'IBPS Clerk', org:'Institute of Banking Personnel Selection', icon:'🏦', cat:'Banking', state:'Central',
+    posts:6500, lastDate:nextOccurrence(8,20), examDate:'Nov', salary:'₹26,000+',
+    status:'open', tags:['IBPS','Clerk','Banking'], isNew:false,
+    portal:'IBPS Clerk', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ibps.in/ibps-clerk-recruitment/',
+    admitUrl:'https://ibps.in/ibps-clerk-admit-card/',
+    resultUrl:'https://ibps.in/ibps-clerk-result/',
+    infoUrl:'https://ibps.in'
   },
   {
-    id:14, name:'Maharashtra Police Constable 2026', org:'Maharashtra Police Recruitment', icon:'👮',
-    category:'Police', state:'Maharashtra', posts:8000, lastDate:'2026-08-15',
-    examDate:'Oct 2026', salary:'₹25,500+', status:'open',
-    type:'12th Pass', tags:['Maharashtra','Police','Constable'], isNew:true,
-    applyLink:'https://mahapariksha.gov.in',
-    notifLink:'https://mahapariksha.gov.in'
+    id:14, name:'Maharashtra Police Constable', org:'Mahapariksha / Maharashtra Govt', icon:'👮', cat:'Police', state:'Maharashtra',
+    posts:8000, lastDate:nextOccurrence(8,15), examDate:'Oct', salary:'₹25,500+',
+    status:'open', tags:['Maharashtra','Police','12th Pass'], isNew:true,
+    portal:'Mahapariksha', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://mahapariksha.gov.in',
+    admitUrl:'https://mahapariksha.gov.in',
+    resultUrl:'https://mahapariksha.gov.in',
+    infoUrl:'https://mahapariksha.gov.in'
   },
   {
-    id:15, name:'SSC MTS 2026', org:'Staff Selection Commission', icon:'📝',
-    category:'SSC', state:'Central', posts:9583, lastDate:'2026-08-01',
-    examDate:'Oct–Nov 2026', salary:'₹18,000+', status:'open',
-    type:'10th Pass', tags:['SSC','MTS','10th Pass'], isNew:true,
-    applyLink:'https://ssc.nic.in',
-    notifLink:'https://ssc.nic.in/Portal/Notifications'
+    id:15, name:'UPSSSC PET', org:'UP Subordinate Service Selection Commission', icon:'📋', cat:'State PSC', state:'UP',
+    posts:'Various', lastDate:nextOccurrence(8,20), examDate:'Nov', salary:'Various',
+    status:'open', tags:['UP','UPSSSC','PET'], isNew:true,
+    portal:'UPSSSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://upsssc.gov.in',
+    admitUrl:'https://upsssc.gov.in',
+    resultUrl:'https://upsssc.gov.in',
+    infoUrl:'https://upsssc.gov.in'
   },
   {
-    id:16, name:'Jharkhand SSC CGL 2026', org:'Jharkhand Staff Selection Commission', icon:'🗺️',
-    category:'State PSC', state:'Jharkhand', posts:1250, lastDate:'2026-07-05',
-    examDate:'Sep 2026', salary:'₹35,400+', status:'open',
-    type:'Graduation', tags:['Jharkhand','JSSC','CGL'], isNew:true,
-    applyLink:'https://jssc.nic.in',
-    notifLink:'https://jssc.nic.in'
-  },
-  {
-    id:17, name:'IBPS Clerk 2026', org:'Institute of Banking Personnel Selection', icon:'🏦',
-    category:'Banking', state:'Central', posts:6500, lastDate:'2026-08-20',
-    examDate:'Nov 2026', salary:'₹26,000+', status:'open',
-    type:'Graduation', tags:['Banking','Clerk','IBPS'], isNew:true,
-    applyLink:'https://ibps.in',
-    notifLink:'https://ibps.in'
-  },
-  {
-    id:18, name:'MP Police Constable 2026', org:'Madhya Pradesh Police', icon:'👮',
-    category:'Police', state:'MP', posts:7500, lastDate:'2026-08-25',
-    examDate:'Oct 2026', salary:'₹19,500+', status:'open',
-    type:'12th Pass', tags:['MP','Police','Constable'], isNew:true,
-    applyLink:'https://mponline.gov.in',
-    notifLink:'https://mponline.gov.in'
+    id:16, name:'Delhi Police Constable', org:'SSC / Delhi Police', icon:'👮', cat:'Police', state:'Delhi',
+    posts:6000, lastDate:nextOccurrence(8,10), examDate:'Oct', salary:'₹21,700+',
+    status:'open', tags:['Delhi','Police','SSC'], isNew:true,
+    portal:'SSC', showApply:true, showAdmit:false, showResult:false,
+    applyUrl:'https://ssc.nic.in/Portal/SchemeExamination',
+    admitUrl:'https://ssc.nic.in/Portal/AdmitCard',
+    resultUrl:'https://ssc.nic.in/Portal/Results',
+    infoUrl:'https://ssc.nic.in'
   },
 ];
 
-// ══════════════════════════════════════════════
-//  ADMIT CARDS – June 2026
-// ══════════════════════════════════════════════
-const ADMIT_CARDS = [
-  { id:1, name:'UPSC CSE Prelims 2026', org:'UPSC', examDate:'28 Jun 2026', status:'available', link:'https://upsc.gov.in', isNew:true },
-  { id:2, name:'CTET June 2026', org:'CBSE', examDate:'28 Jun – 6 Jul 2026', status:'available', link:'https://ctet.nic.in', isNew:true },
-  { id:3, name:'SSC MTS 2025 Tier II', org:'SSC', examDate:'25–27 Jun 2026', status:'available', link:'https://ssc.nic.in', isNew:true },
-  { id:4, name:'RRB NTPC Phase II CBT 2026', org:'RRB', examDate:'Jul 2026', status:'releasing', link:'https://rrbapply.gov.in', isNew:true },
-  { id:5, name:'BPSC 71st CCE Mains 2026', org:'BPSC', examDate:'Jul 20, 2026', status:'releasing', link:'https://bpsc.bih.nic.in', isNew:true },
-  { id:6, name:'UP Police SI 2026', org:'UPPRPB', examDate:'Aug 2026', status:'upcoming', link:'https://uppbpb.gov.in', isNew:false },
-  { id:7, name:'SSC CGL 2026 Tier I', org:'SSC', examDate:'Sep 2026', status:'upcoming', link:'https://ssc.nic.in', isNew:false },
-  { id:8, name:'IBPS PO 2026 Prelims', org:'IBPS', examDate:'Oct 2026', status:'upcoming', link:'https://ibps.in', isNew:false },
-  { id:9, name:'NDA II 2026', org:'UPSC', examDate:'Sep 13, 2026', status:'upcoming', link:'https://upsc.gov.in', isNew:false },
-  { id:10, name:'SSC CHSL 2026 Tier I', org:'SSC', examDate:'Sep 2026', status:'upcoming', link:'https://ssc.nic.in', isNew:false },
-  { id:11, name:'RPSC RAS 2026 Prelims', org:'RPSC', examDate:'Sep 2026', status:'upcoming', link:'https://rpsc.rajasthan.gov.in', isNew:false },
-  { id:12, name:'UPSC CDS II 2026', org:'UPSC', examDate:'Sep 7, 2026', status:'upcoming', link:'https://upsc.gov.in', isNew:false },
-  { id:13, name:'SBI PO 2026 Prelims', org:'SBI', examDate:'Aug 2026', status:'releasing', link:'https://sbi.co.in/careers', isNew:true },
-  { id:14, name:'UPPSC PCS 2026 Prelims', org:'UPPSC', examDate:'Jul 2026', status:'releasing', link:'https://uppsc.up.nic.in', isNew:true },
+// ═══════════════════════════════════════════════════
+//  ADMIT CARDS with direct download URLs
+// ═══════════════════════════════════════════════════
+const ADMITS = [
+  { name:'UPSC CSE Prelims', org:'UPSC', examDate:'Jun–Jul '+YEAR, status:'available', link:'https://upsc.gov.in/examinations/e-admit-card', isNew:true },
+  { name:'CTET '+YEAR, org:'CBSE', examDate:'Jun–Jul '+YEAR, status:'available', link:'https://ctet.nic.in/WebInfo/Page/Page?PageId=3&LangId=P', isNew:true },
+  { name:'SSC MTS '+YEAR+' Tier II', org:'SSC', examDate:'Jun–Jul '+YEAR, status:'available', link:'https://ssc.nic.in/Portal/AdmitCard', isNew:true },
+  { name:'RRB NTPC Phase II', org:'RRB', examDate:'Jul '+YEAR, status:'releasing', link:'https://rrbapply.gov.in', isNew:true },
+  { name:'BPSC CCE Mains', org:'BPSC', examDate:'Jul '+YEAR, status:'releasing', link:'https://onlinebpsc.bihar.gov.in', isNew:true },
+  { name:'SBI PO Prelims', org:'SBI', examDate:'Aug '+YEAR, status:'releasing', link:'https://bank.sbi/careers', isNew:true },
+  { name:'UPPSC PCS Prelims', org:'UPPSC', examDate:'Jul '+YEAR, status:'releasing', link:'https://uppsc.up.nic.in', isNew:true },
+  { name:'UP Police SI', org:'UPPRPB', examDate:'Aug '+YEAR, status:'upcoming', link:'https://uppbpb.gov.in', isNew:false },
+  { name:'SSC CGL Tier I', org:'SSC', examDate:'Sep '+YEAR, status:'upcoming', link:'https://ssc.nic.in/Portal/AdmitCard', isNew:false },
+  { name:'IBPS PO Prelims', org:'IBPS', examDate:'Oct '+YEAR, status:'upcoming', link:'https://ibps.in/ibps-po-admit-card/', isNew:false },
+  { name:'NDA II', org:'UPSC', examDate:'Sep '+YEAR, status:'upcoming', link:'https://upsc.gov.in/examinations/e-admit-card', isNew:false },
+  { name:'RPSC RAS Prelims', org:'RPSC', examDate:'Sep '+YEAR, status:'upcoming', link:'https://rpsc.rajasthan.gov.in', isNew:false },
+  { name:'UPSC CDS II', org:'UPSC', examDate:'Sep '+YEAR, status:'upcoming', link:'https://upsc.gov.in/examinations/e-admit-card', isNew:false },
+  { name:'IBPS Clerk Prelims', org:'IBPS', examDate:'Nov '+YEAR, status:'upcoming', link:'https://ibps.in/ibps-clerk-admit-card/', isNew:false },
 ];
 
-// ══════════════════════════════════════════════
-//  RESULTS – June 2026
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+//  RESULTS with direct result page URLs
+// ═══════════════════════════════════════════════════
 const RESULTS = [
-  { id:1, name:'NDA NA I 2026', org:'UPSC', date:'Jun 16, 2026', status:'declared', link:'https://upsc.gov.in/examinations/results', isNew:true },
-  { id:2, name:'BPSC 71st CCE Prelims 2026', org:'BPSC', date:'Jun 15, 2026', status:'declared', link:'https://bpsc.bih.nic.in', isNew:true },
-  { id:3, name:'SSC CGL 2025 Tier III', org:'SSC', date:'Jun 12, 2026', status:'declared', link:'https://ssc.nic.in/Portal/Results', isNew:true },
-  { id:4, name:'IBPS RRB PO 2025 Final', org:'IBPS', date:'Jun 10, 2026', status:'declared', link:'https://ibps.in', isNew:true },
-  { id:5, name:'SBI PO 2026 Prelims', org:'SBI', date:'Jun 14, 2026', status:'declared', link:'https://sbi.co.in/careers', isNew:true },
-  { id:6, name:'UPSC CDS I 2026', org:'UPSC', date:'Jun 5, 2026', status:'declared', link:'https://upsc.gov.in/examinations/results', isNew:false },
-  { id:7, name:'RRB Group D Phase III', org:'RRB', date:'Jun 8, 2026', status:'declared', link:'https://indianrailways.gov.in', isNew:false },
-  { id:8, name:'UP Police Constable 2024 Final', org:'UPPRPB', date:'Jun 1, 2026', status:'declared', link:'https://uppbpb.gov.in', isNew:false },
-  { id:9, name:'SSC CHSL 2025 Tier II', org:'SSC', date:'Awaited', status:'awaited', link:'#', isNew:false },
-  { id:10, name:'RPSC RAS 2025 Mains', org:'RPSC', date:'Awaited', status:'awaited', link:'#', isNew:false },
-  { id:11, name:'BPSC 72nd CCE Prelims', org:'BPSC', date:'Aug 2026 (Expected)', status:'awaited', link:'#', isNew:false },
+  { name:'NDA NA I '+YEAR, org:'UPSC', date:'Jun '+YEAR, status:'declared', link:'https://upsc.gov.in/examinations/results', isNew:true },
+  { name:'BPSC CCE Prelims '+YEAR, org:'BPSC', date:'Jun '+YEAR, status:'declared', link:'https://bpsc.bih.nic.in', isNew:true },
+  { name:'SSC CGL '+(YEAR-1)+' Tier III', org:'SSC', date:'Jun '+YEAR, status:'declared', link:'https://ssc.nic.in/Portal/Results', isNew:true },
+  { name:'IBPS RRB PO '+(YEAR-1)+' Final', org:'IBPS', date:'Jun '+YEAR, status:'declared', link:'https://ibps.in/ibps-po-result/', isNew:true },
+  { name:'SBI PO '+YEAR+' Prelims', org:'SBI', date:'Jun '+YEAR, status:'declared', link:'https://bank.sbi/careers', isNew:true },
+  { name:'UPSC CDS I '+YEAR, org:'UPSC', date:'Jun '+YEAR, status:'declared', link:'https://upsc.gov.in/examinations/results', isNew:false },
+  { name:'RRB Group D Phase III', org:'RRB', date:'May '+YEAR, status:'declared', link:'https://rrbapply.gov.in', isNew:false },
+  { name:'UP Police Constable Final', org:'UPPRPB', date:'Jun '+YEAR, status:'declared', link:'https://uppbpb.gov.in', isNew:false },
+  { name:'SSC CHSL '+(YEAR-1)+' Tier II', org:'SSC', date:'Awaited', status:'awaited', link:'https://ssc.nic.in/Portal/Results', isNew:false },
+  { name:'RPSC RAS '+(YEAR-1)+' Mains', org:'RPSC', date:'Awaited', status:'awaited', link:'https://rpsc.rajasthan.gov.in/LatestNews', isNew:false },
+  { name:'BPSC CCE '+YEAR+' Result', org:'BPSC', date:'Expected Sep '+YEAR, status:'awaited', link:'https://bpsc.bih.nic.in', isNew:false },
 ];
 
-// ══════════════════════════════════════════════
-//  NEWS – June 2026 (with direct source links)
-// ══════════════════════════════════════════════
-const NEWS = [
-  {
-    id:1, title:'SSC CGL 2026 Official Notification – 19,000+ Posts – Apply Before 15 July',
-    source:'SSC Official (ssc.nic.in)', badge:'official', time:'Today, 18 Jun 2026',
-    icon:'📋', category:'official', tags:['SSC','CGL','19000 Posts'],
-    trending:true, isNew:true,
-    link:'https://ssc.nic.in/Portal/Notifications',
-    snippet:'SSC ने CGL 2026 का official notification जारी किया। 19,000+ Posts – सभी Graduates apply कर सकते हैं। Last date 15 July 2026.'
-  },
-  {
-    id:2, title:'UPSC CSE 2026 Prelims Admit Card Download Active – Exam on 28 June 2026',
-    source:'UPSC Official (upsc.gov.in)', badge:'official', time:'Today, 18 Jun 2026',
-    icon:'🎫', category:'official', tags:['UPSC','Admit Card','28 Jun'], trending:true, isNew:true,
-    link:'https://upsc.gov.in/examinations/active-examinations',
-    snippet:'UPSC ने CSE Prelims 2026 का Admit Card activate किया। 28 June को Prelims exam होगा। upsc.gov.in से download करें।'
-  },
-  {
-    id:3, title:'UP Police SI 2026 – 2430 Posts – Apply Before 30 June | Last 12 Days!',
-    source:'UPPBPB (uppbpb.gov.in)', badge:'official', time:'17 Jun 2026',
-    icon:'👮', category:'official', tags:['UP','SI','2430 Posts'], trending:true, isNew:true,
-    link:'https://uppbpb.gov.in',
-    snippet:'UP Police Sub Inspector 2026 recruitment – 2430 Posts। Graduate candidates apply करें। Last date 30 June 2026 – sirf 12 din bache hain!'
-  },
-  {
-    id:4, title:'NDA I 2026 Result Declared – Check at upsc.gov.in',
-    source:'UPSC Official', badge:'official', time:'16 Jun 2026',
-    icon:'🎖️', category:'official', tags:['NDA','Result','UPSC'], isNew:true,
-    link:'https://upsc.gov.in/examinations/results',
-    snippet:'UPSC ने NDA & NA I 2026 का result declare किया। Qualified candidates SSB interview के लिए eligible हैं।'
-  },
-  {
-    id:5, title:'Khan Sir Bihar का Complete Analysis – BPSC 72nd CCE Strategy [Latest Video]',
-    source:'Khan Sir YouTube Channel', badge:'teacher', time:'17 Jun 2026',
-    icon:'📺', category:'teacher', tags:['BPSC','Khan Sir','Strategy'], trending:true, isNew:true,
-    link:'https://www.youtube.com/@khansirpatna',
-    snippet:'Khan Sir ने BPSC 72nd CCE 2026 के लिए complete strategy video upload की। Chapter-wise weightage, important topics और time management cover किया।'
-  },
-  {
-    id:6, title:'CTET June 2026 Admit Card Released – Exam 28 June se Shuru',
-    source:'CBSE CTET (ctet.nic.in)', badge:'official', time:'15 Jun 2026',
-    icon:'📚', category:'official', tags:['CTET','Admit Card','Teaching'], isNew:true,
-    link:'https://ctet.nic.in',
-    snippet:'CTET June 2026 का admit card ctet.nic.in पर available है। Exam 28 June से 6 July 2026 तक होगा।'
-  },
-  {
-    id:7, title:'RRB NTPC 2026 Phase II – Exam Dates Announced – Register at rrbapply.gov.in',
-    source:'Indian Railways (rrbapply.gov.in)', badge:'official', time:'16 Jun 2026',
-    icon:'🚂', category:'official', tags:['RRB','NTPC','Railway'], trending:true, isNew:true,
-    link:'https://rrbapply.gov.in',
-    snippet:'RRB NTPC 2026 Phase II CBT dates announce हो गई। July-August 2026 में exam होगा। Last date July 10, 2026।'
-  },
-  {
-    id:8, title:'Wifistudy: SSC CGL 2026 Complete Syllabus & Best Books – Must Watch!',
-    source:'Wifistudy YouTube', badge:'teacher', time:'17 Jun 2026',
-    icon:'📺', category:'teacher', tags:['SSC','CGL','Books'], isNew:true,
-    link:'https://www.youtube.com/@wifistudy',
-    snippet:'Wifistudy team ने SSC CGL 2026 ka complete syllabus breakdown और recommended books की list share की।'
-  },
-  {
-    id:9, title:'SBI Clerk 2026 – 14,000 Posts Notified – Online Apply Starts Soon',
-    source:'SBI Official (sbi.co.in)', badge:'official', time:'14 Jun 2026',
-    icon:'🏦', category:'official', tags:['SBI','Clerk','14000 Posts'], isNew:true,
-    link:'https://sbi.co.in/careers',
-    snippet:'SBI ने Junior Associate (Clerk) 2026 के लिए 14,000 vacancies announce की हैं। Apply online soon at sbi.co.in/careers।'
-  },
-  {
-    id:10, title:'Adda247: Free Mock Test Series for IBPS PO 2026 – Start Preparing Now',
-    source:'Adda247 (adda247.com)', badge:'teacher', time:'16 Jun 2026',
-    icon:'📊', category:'teacher', tags:['IBPS','PO','Mock Test'], isNew:true,
-    link:'https://www.adda247.com/ibps-po',
-    snippet:'Adda247 ने IBPS PO 2026 के लिए free mock test series launch की। Latest pattern पर based 30 full tests available।'
-  },
-  {
-    id:11, title:'BPSC 71st CCE Prelims Result 2026 Declared – Check bpsc.bih.nic.in',
-    source:'BPSC (bpsc.bih.nic.in)', badge:'official', time:'15 Jun 2026',
-    icon:'📊', category:'official', tags:['BPSC','Result','Bihar'], trending:true, isNew:true,
-    link:'https://bpsc.bih.nic.in',
-    snippet:'BPSC 71st CCE Prelims 2026 result declare हो गया। Qualified candidates को Mains form fill करना होगा।'
-  },
-  {
-    id:12, title:'Jharkhand JSSC CGL 2026 Notification – 1250 Posts – Apply Before 5 July',
-    source:'JSSC (jssc.nic.in)', badge:'official', time:'13 Jun 2026',
-    icon:'🗺️', category:'state', tags:['Jharkhand','JSSC','CGL'], isNew:true,
-    link:'https://jssc.nic.in',
-    snippet:'Jharkhand Staff Selection Commission ने JSSC CGL 2026 notification जारी किया। 1250 Posts। Last date 5 July 2026।'
-  },
-  {
-    id:13, title:'Trending: Delhi Police Constable 2026 – 6000 Posts – Apply at ssc.nic.in',
-    source:'Trending on Twitter/X', badge:'trending', time:'Today, 18 Jun 2026',
-    icon:'👮', category:'trending', tags:['Delhi','Police','6000 Posts'], trending:true, isNew:true,
-    link:'https://ssc.nic.in/Portal/Notifications',
-    snippet:'Delhi Police Constable 2026 notification released। 6000+ posts, 12th pass candidates eligible. Twitter पर यह trending है।'
-  },
-  {
-    id:14, title:'Drishti IAS: UPSC CSE 2026 Prelims Last Month Strategy – Important Topics',
-    source:'Drishti IAS (drishtiias.com)', badge:'teacher', time:'17 Jun 2026',
-    icon:'🏛️', category:'teacher', tags:['UPSC','Prelims','Strategy'], isNew:true,
-    link:'https://www.drishtiias.com/hindi',
-    snippet:'Drishti IAS ने Prelims 28 June को देखते हुए last month की strategy guide publish की। Most expected topics और revision tips।'
-  },
-];
+// ═══════════════════════════════════════════════════
+//  SMART KEYWORD → OFFICIAL DIRECT LINK MAPPER
+//  For news articles – detects exam + action type
+// ═══════════════════════════════════════════════════
+function detectOfficialLinks(title, link) {
+  const t = (title || '').toLowerCase();
+  const links = [];
 
-// ══════════════════════════════════════════════
-//  ALERTS – June 2026
-// ══════════════════════════════════════════════
-const ALERTS_DATA = [
-  { id:1, icon:'🚨', bg:'#fee2e2', title:'UP Police SI – Last Date in 12 Days!', sub:'Apply before 30 June 2026 at uppbpb.gov.in', time:'Today, 18 Jun 2026', unread:true, link:'https://uppbpb.gov.in' },
-  { id:2, icon:'🎫', bg:'#d1fae5', title:'UPSC CSE 2026 Admit Card Available!', sub:'Download now – Exam on 28 June 2026 at upsc.gov.in', time:'Today, 18 Jun 2026', unread:true, link:'https://upsc.gov.in' },
-  { id:3, icon:'📋', bg:'#dbeafe', title:'New: SSC CGL 2026 – 19,000+ Posts!', sub:'Last date: July 15, 2026. Apply at ssc.nic.in', time:'Today, 18 Jun 2026', unread:true, link:'https://ssc.nic.in' },
-  { id:4, icon:'📊', bg:'#fff3cd', title:'Result: NDA I 2026 Declared', sub:'Check result at upsc.gov.in/examinations/results', time:'16 Jun 2026', unread:true, link:'https://upsc.gov.in/examinations/results' },
-  { id:5, icon:'📊', bg:'#fff3cd', title:'Result: BPSC 71st CCE Prelims Declared', sub:'Check result at bpsc.bih.nic.in', time:'15 Jun 2026', unread:true, link:'https://bpsc.bih.nic.in' },
-  { id:6, icon:'🎫', bg:'#d1fae5', title:'CTET June 2026 Admit Card Released', sub:'Download at ctet.nic.in – Exam from 28 June', time:'15 Jun 2026', unread:true, link:'https://ctet.nic.in' },
-  { id:7, icon:'📰', bg:'#ede9fe', title:'RRB NTPC Phase II – Dates Announced', sub:'Phase II CBT – July-August 2026 – rrbapply.gov.in', time:'16 Jun 2026', unread:true, link:'https://rrbapply.gov.in' },
-  { id:8, icon:'📋', bg:'#d1fae5', title:'SBI Clerk 2026 – 14,000 Posts Notified', sub:'Apply soon at sbi.co.in/careers', time:'14 Jun 2026', unread:false, link:'https://sbi.co.in/careers' },
-];
+  // Detect action type
+  const isAdmit = /admit\s*card|hall\s*ticket|e-admit|download.*card|card.*download/i.test(t);
+  const isResult = /result|declared|merit\s*list|select.*list|cut.?off|scorecard/i.test(t);
+  const isApply = /apply|application|notif|recruit|vacancy|post|form|registr|last\s*date/i.test(t);
+  const isAnswer = /answer\s*key|objection/i.test(t);
 
-// ══════════════════════════════════════════════
-//  COUNTDOWN DATA
-// ══════════════════════════════════════════════
-const COUNTDOWN_DATA = [
-  { name:'UP Police SI 2026', type:'Last Date to Apply', date:'2026-06-30', color:'red-grad', icon:'👮', link:'https://uppbpb.gov.in' },
-  { name:'JSSC CGL 2026', type:'Last Date to Apply', date:'2026-07-05', color:'orange-grad', icon:'🗺️', link:'https://jssc.nic.in' },
-  { name:'RRB NTPC Phase II', type:'Last Date to Apply', date:'2026-07-10', color:'', icon:'🚂', link:'https://rrbapply.gov.in' },
-  { name:'SSC CGL 2026', type:'Last Date to Apply', date:'2026-07-15', color:'green-grad', icon:'📝', link:'https://ssc.nic.in' },
-  { name:'UPSC CSE Prelims', type:'Exam Date', date:'2026-06-28', color:'purple-grad', icon:'🏛️', link:'https://upsc.gov.in' },
-];
+  // Detect org
+  let portal = null;
+  if (/\bssc\b|staff selection/i.test(t)) portal = 'SSC';
+  else if (/\bupsc\b|civil service|ias|ips|cse|cds|nda|capf/i.test(t)) portal = 'UPSC';
+  else if (/\brrb\b|railway|ntpc|group.?d|alp|je\b/i.test(t)) portal = 'RRB';
+  else if (/\bibps\b.*\bpo\b|\bpo\b.*\bibps\b/i.test(t)) portal = 'IBPS';
+  else if (/\bibps\b.*\bclerk\b|\bclerk\b.*\bibps\b/i.test(t)) portal = 'IBPS Clerk';
+  else if (/\bsbi\b/i.test(t)) portal = 'SBI';
+  else if (/\bctet\b|central teacher/i.test(t)) portal = 'CTET';
+  else if (/\bnda\b|national defence/i.test(t)) portal = 'NDA';
+  else if (/\bbpsc\b|bihar.*psc/i.test(t)) portal = 'BPSC';
+  else if (/\brpsc\b|rajasthan.*psc|\bras\b/i.test(t)) portal = 'RPSC';
+  else if (/up\s*police|uppbpb/i.test(t)) portal = 'UPPRPB';
+  else if (/\bupsssc\b|\bpet\b.*up/i.test(t)) portal = 'UPSSSC';
+  else if (/\buppsc\b/i.test(t)) portal = 'UPPSC';
+  else if (/mahapariksha|maharashtra\s*police/i.test(t)) portal = 'Mahapariksha';
+  else if (/\bjssc\b|jharkhand.*ssc/i.test(t)) portal = 'JSSC';
+  else if (/mp\s*police|madhya\s*pradesh\s*police/i.test(t)) portal = 'MPPolice';
 
-// ══════════════════════════════════════════════
-//  PREFERENCES
-// ══════════════════════════════════════════════
-const CENTRAL_PREFS = ['UPSC / IAS', 'SSC', 'Railway (RRB)', 'Banking (IBPS)', 'Banking (SBI)', 'Defence (NDA/CDS)', 'CTET / Teaching', 'Police / CRPF', 'Insurance (LIC/GIC)', 'Post Office'];
-const STATE_PREFS = ['Uttar Pradesh', 'Bihar', 'Rajasthan', 'Madhya Pradesh', 'Maharashtra', 'Delhi', 'Punjab', 'Haryana', 'Gujarat', 'West Bengal', 'Tamil Nadu', 'Karnataka', 'Jharkhand', 'Odisha', 'Chhattisgarh', 'Uttarakhand'];
-const ALERT_PREFS = ['Vacancy Released', 'Last Date Alert (7 days)', 'Last Date Alert (3 days)', 'Admit Card Released', 'Exam Date Reminder', 'Result Declared', 'Answer Key Released', 'Cut-off Released'];
-const NEWS_PREFS = ['Official Government Sites', 'Trending on Twitter/X', 'YouTube Educators', 'Adda247 / Testbook', 'Drishti IAS / Vision IAS', 'Jagran Josh / Amar Ujala'];
+  const p = portal ? PORTALS[portal] : null;
 
-let savedExams = new Set(JSON.parse(localStorage.getItem('savedExams') || '[]'));
-let userPrefs = JSON.parse(localStorage.getItem('userPrefs') || '{"central":["UPSC / IAS","SSC","Railway (RRB)"],"states":["Uttar Pradesh","Bihar"],"alerts":["Vacancy Released","Last Date Alert (7 days)","Admit Card Released","Result Declared"],"news":["Official Government Sites","Trending on Twitter/X","YouTube Educators"]}');
-let currentVacancyFilter = 'All';
+  if (isAdmit && p) links.push({ url: p.admit, label: '⬇ Download Admit Card', cls: 'nob-admit' });
+  if (isResult && p) links.push({ url: p.result, label: '📊 Check Result', cls: 'nob-result' });
+  if (isApply && p) links.push({ url: p.apply, label: '✍ Apply Now', cls: 'nob-apply' });
+  if (isAnswer && p) links.push({ url: p.info, label: '📋 Answer Key', cls: 'nob-info' });
+  if (links.length === 0 && p) links.push({ url: p.info, label: '📌 Official Info', cls: 'nob-info' });
 
-// ══════════════════════════════════════════════
-//  NAVIGATION
-// ══════════════════════════════════════════════
-function navigate(page) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
-  const el = document.getElementById('page-' + page);
-  if (el) el.classList.add('active');
-  document.querySelectorAll('[data-page="' + page + '"]').forEach(s => s.classList.add('active'));
-  if (window.innerWidth < 768) closeSidebar();
-  if (page === 'saved') renderSaved();
-  if (page === 'alerts') renderAlerts();
-  if (page === 'vacancies') renderVacancyPage();
+  return links;
 }
 
-function filterByOrg(org) { navigate('vacancies'); currentVacancyFilter = org; renderVacancyPage(); }
-function filterByState(state) { navigate('vacancies'); currentVacancyFilter = state === 'All' ? 'All' : state; renderVacancyPage(); }
+// ═══════════════════════════════════════════════════
+//  RSS LIVE FETCH (news articles + smart official links)
+// ═══════════════════════════════════════════════════
+const R2J = 'https://api.rss2json.com/v1/api.json?rss_url=';
+const TTL = 60 * 60 * 1000; // 1 hour cache
 
-// SIDEBAR MOBILE
-document.getElementById('menuBtn').onclick = () => {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('overlayBg').classList.toggle('open');
-};
-function closeSidebar() {
-  document.getElementById('sidebar').classList.remove('open');
-  document.getElementById('overlayBg').classList.remove('open');
+const FEEDS = [
+  { url:`https://news.google.com/rss/search?q=sarkari+naukri+vacancy+notification+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'vacancy' },
+  { url:`https://news.google.com/rss/search?q=SSC+CGL+CHSL+MTS+${YEAR}+apply&hl=hi&gl=IN&ceid=IN:hi`, cat:'ssc' },
+  { url:`https://news.google.com/rss/search?q=UPSC+IAS+civil+services+${YEAR}&hl=en&gl=IN&ceid=IN:en`, cat:'upsc' },
+  { url:`https://news.google.com/rss/search?q=RRB+railway+recruitment+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'railway' },
+  { url:`https://news.google.com/rss/search?q=IBPS+SBI+bank+PO+clerk+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'banking' },
+  { url:`https://news.google.com/rss/search?q=admit+card+download+sarkari+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'admitcard' },
+  { url:`https://news.google.com/rss/search?q=sarkari+exam+result+declared+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'result' },
+  { url:`https://news.google.com/rss/search?q=UP+Bihar+Rajasthan+state+government+job+${YEAR}&hl=hi&gl=IN&ceid=IN:hi`, cat:'state' },
+];
+
+let liveNews = [];
+let fetchedAt = null;
+let newsFilt = 'all';
+let vFilt = 'All';
+
+function getCache() {
+  try {
+    const r = localStorage.getItem('skt_c2');
+    if (!r) return null;
+    const { ts, d } = JSON.parse(r);
+    return Date.now() - ts < TTL ? { data: d, ts } : null;
+  } catch { return null; }
+}
+function setCache(d) {
+  try { localStorage.setItem('skt_c2', JSON.stringify({ ts: Date.now(), d })); } catch {}
+}
+function setFS(state, txt) {
+  document.getElementById('fDot').className = 'fd ' + state;
+  document.getElementById('fTxt').textContent = txt;
 }
 
-// ══════════════════════════════════════════════
-//  COUNTDOWNS
-// ══════════════════════════════════════════════
-function renderCountdowns() {
-  document.getElementById('countdownRow').innerHTML = COUNTDOWN_DATA.map(cd => {
-    const days = getDaysLeft(cd.date);
-    const d = days < 0 ? 0 : days;
-    const urgentTxt = days <= 7 && days >= 0 ? ' ⚠️ Urgent!' : days < 0 ? ' (Passed)' : '';
-    return `<a class="countdown-card ${cd.color}" href="${cd.link}" target="_blank">
-      <div class="cc-top">
-        <div><div class="cc-name">${cd.name}</div><div class="cc-type">${cd.type}</div></div>
-        <div class="cc-icon">${cd.icon}</div>
+async function fetchFeed(f) {
+  try {
+    const res = await fetch(R2J + encodeURIComponent(f.url) + '&count=10', { signal: AbortSignal.timeout(9000) });
+    if (!res.ok) throw 0;
+    const j = await res.json();
+    if (j.status !== 'ok') throw 0;
+    return (j.items || []).map(i => ({
+      title: i.title || '',
+      link: i.link || '#',
+      pubDate: i.pubDate || '',
+      source: i.author || '',
+      snippet: (i.description || '').replace(/<[^>]*>/g, '').substring(0, 160),
+      thumb: i.thumbnail || '',
+      cat: f.cat,
+    }));
+  } catch { return []; }
+}
+
+async function fetchAll(force = false) {
+  const cached = !force ? getCache() : null;
+  if (cached) {
+    liveNews = cached.data;
+    fetchedAt = new Date(cached.ts);
+    setFS('ok', 'Updated ' + fTime(fetchedAt) + ' (cached)');
+    renderNews(); updateStats(); return;
+  }
+  setFS('ld', 'Fetching live news from Google News...');
+  showSkels();
+  try {
+    const all = await Promise.allSettled(FEEDS.map(f => fetchFeed(f)));
+    const items = [];
+    all.forEach(r => r.status === 'fulfilled' && items.push(...r.value));
+    const seen = new Set();
+    liveNews = items.filter(i => {
+      const k = i.title.substring(0, 40).toLowerCase();
+      if (seen.has(k)) return false;
+      seen.add(k); return true;
+    }).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+    fetchedAt = new Date();
+    setCache(liveNews);
+    if (liveNews.length) {
+      setFS('ok', 'Live • Updated ' + fTime(fetchedAt) + ' • ' + liveNews.length + ' items');
+      toast('✅ ' + liveNews.length + ' live news items fetched!', '📰');
+    } else {
+      setFS('er', 'No data – check internet connection');
+      toast('⚠️ Could not fetch live news. Try clicking Refresh.', '⚠️');
+    }
+  } catch {
+    setFS('er', 'Fetch failed');
+    toast('⚠️ Network error. Showing offline data.', '⚠️');
+  }
+  renderNews(); updateStats();
+}
+
+function showSkels() {
+  const h = Array(5).fill(0).map(() => `
+    <div class="skel-card">
+      <div class="sk-ic" style="width:58px;height:50px;border-radius:7px;background:#f3f4f6;animation:pulse 1.4s infinite;flex-shrink:0"></div>
+      <div class="sk-b">
+        <div class="sk-l" style="width:60%;background:#f3f4f6"></div>
+        <div class="sk-l" style="width:90%;background:#f3f4f6"></div>
+        <div class="sk-l" style="width:72%;background:#f3f4f6"></div>
+        <div class="sk-l" style="width:40%;background:#f3f4f6"></div>
       </div>
-      <div class="cc-days">${d}</div>
-      <div class="cc-label">Days Remaining${urgentTxt}</div>
+    </div>`).join('');
+  document.getElementById('homeSkel').innerHTML = h;
+  document.getElementById('homeNewsArea').innerHTML = `<div class="skel-wrap" id="homeSkel">${h}</div>`;
+  document.getElementById('newsSkel').innerHTML = h;
+  document.getElementById('newsSkel').style.display = 'flex';
+  document.getElementById('newsSkel').style.flexDirection = 'column';
+  document.getElementById('newsArea').innerHTML = '';
+}
+
+function newsCard(item) {
+  const catIcons = { vacancy:'📋', ssc:'📝', upsc:'🏛️', railway:'🚂', banking:'🏦', admitcard:'🎫', result:'📊', state:'🗺️' };
+  const catBadge = { vacancy:'sb-o', ssc:'sb-o', upsc:'sb-o', railway:'sb-o', banking:'sb-g', admitcard:'sb-g', result:'sb-w', state:'sb-p' };
+  const icon = catIcons[item.cat] || '📰';
+  const badge = catBadge[item.cat] || 'sb-o';
+  const label = item.cat.toUpperCase();
+  const tm = ago(item.pubDate);
+  const src = (item.source || 'News').substring(0, 28);
+  const snip = item.snippet ? item.snippet.substring(0, 130) + '…' : '';
+  const thumb = item.thumb ? `<img src="${item.thumb}" onerror="this.parentNode.innerHTML='${icon}'">` : icon;
+
+  // Smart official action links
+  const officialLinks = detectOfficialLinks(item.title, item.link);
+  const actBtns = officialLinks.map(l =>
+    `<a class="nc-official-btn ${l.cls}" href="${l.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${l.label} ↗</a>`
+  ).join('');
+
+  return `<div class="nc">
+    <a class="nc-main" href="${item.link}" target="_blank" rel="noopener" style="display:flex;gap:11px;text-decoration:none;color:inherit">
+      <div class="nc-th">${thumb}</div>
+      <div class="nc-body">
+        <div class="nc-src">
+          <span class="sbg ${badge}">${label}</span>
+          <span class="nc-time">🕐 ${tm}</span>
+          <span style="font-size:9px;color:var(--p);font-weight:600;margin-left:auto">📰 Read Article ↗</span>
+        </div>
+        <div class="nc-title">${item.title}</div>
+        ${snip ? `<div class="nc-snip">${snip}</div>` : ''}
+        <div style="font-size:10px;color:var(--mu);margin-top:4px">Source: ${src}</div>
+      </div>
+    </a>
+    ${actBtns ? `<div class="nc-actions"><span style="font-size:10px;color:var(--mu);font-weight:600">⚡ Go directly to official site:</span> ${actBtns}</div>` : ''}
+  </div>`;
+}
+
+function renderNews() {
+  document.getElementById('homeNewsArea').innerHTML = liveNews.length
+    ? `<div class="nl2">${liveNews.slice(0, 6).map(newsCard).join('')}</div>`
+    : `<div class="emp"><div class="emp-i">📡</div><h3>Could not fetch live news</h3><p>Check internet & click Refresh</p></div>`;
+  fNews(newsFilt);
+  if (liveNews.length) {
+    document.getElementById('tickTxt').textContent = liveNews.slice(0, 8).map(n => '• ' + n.title).join('   ');
+  }
+  document.getElementById('newsSkel').style.display = 'none';
+  document.getElementById('cnt-n').textContent = liveNews.length || '—';
+}
+
+function fNews(cat, el) {
+  newsFilt = cat;
+  document.querySelectorAll('#page-news .chip').forEach(c => c.classList.remove('act'));
+  if (el) el.classList.add('act');
+  const filtered = cat === 'all' ? liveNews : liveNews.filter(n => n.cat === cat);
+  document.getElementById('newsArea').innerHTML = filtered.length
+    ? filtered.map(newsCard).join('')
+    : `<div class="emp"><div class="emp-i">🔍</div><h3>No items in this category</h3><p>Try another tab or click Refresh</p></div>`;
+}
+
+function updateStats() {
+  document.getElementById('sv').textContent = EXAMS.length;
+  document.getElementById('svt').textContent = '↑ ' + EXAMS.filter(e => e.isNew).length + ' new this month';
+  document.getElementById('sn').textContent = liveNews.length || '—';
+  document.getElementById('snt').textContent = liveNews.length ? '↻ ' + fTime(fetchedAt) : 'Fetching...';
+  document.getElementById('cnt-v').textContent = EXAMS.length;
+}
+
+async function hardRefresh() {
+  const btn = document.getElementById('rfBtn');
+  btn.classList.add('spin'); btn.disabled = true;
+  await fetchAll(true);
+  btn.classList.remove('spin'); btn.disabled = false;
+}
+
+// ═══════════════════════════════════════════════════
+//  NAVIGATION
+// ═══════════════════════════════════════════════════
+function nav(pg) {
+  document.querySelectorAll('.pg').forEach(p => p.classList.remove('act'));
+  document.querySelectorAll('.sb-i').forEach(s => s.classList.remove('act'));
+  const el = document.getElementById('page-' + pg);
+  if (el) el.classList.add('act');
+  document.querySelectorAll('[data-pg="' + pg + '"]').forEach(s => s.classList.add('act'));
+  if (window.innerWidth < 768) closeSB();
+  if (pg === 'saved') renderSaved();
+  if (pg === 'alerts') renderAlerts();
+  if (pg === 'vacancies') renderVPage();
+  if (pg === 'news') fNews(newsFilt);
+}
+// keep backward compat
+function navigate(pg) { nav(pg); }
+
+function fOrg(o) { nav('vacancies'); vFilt = o; renderVPage(); }
+function fState(s) { nav('vacancies'); vFilt = s === 'All' ? 'All' : s; renderVPage(); }
+
+document.getElementById('mnBtn').onclick = () => {
+  document.getElementById('sb').classList.toggle('op');
+  document.getElementById('ovbg').classList.toggle('op');
+};
+function closeSB() {
+  document.getElementById('sb').classList.remove('op');
+  document.getElementById('ovbg').classList.remove('op');
+}
+
+// ═══════════════════════════════════════════════════
+//  COUNTDOWN
+// ═══════════════════════════════════════════════════
+const CDOWNS = [
+  { n:'UP Police SI', dt:nextOccurrence(6,30), cl:'c1', ic:'👮', url:'https://uppbpb.gov.in' },
+  { n:'UPSC CSE Prelims', dt:nextOccurrence(6,28), cl:'c5', ic:'🏛️', url:'https://upsc.gov.in/examinations/e-admit-card' },
+  { n:'SSC CGL', dt:nextOccurrence(7,15), cl:'c2', ic:'📝', url:'https://ssc.nic.in/Portal/SchemeExamination' },
+  { n:'SBI Clerk', dt:nextOccurrence(7,18), cl:'c4', ic:'🏦', url:'https://bank.sbi/careers' },
+  { n:'NDA II', dt:nextOccurrence(7,29), cl:'c3', ic:'🎖️', url:'https://upsconline.gov.in' },
+];
+function renderCdowns() {
+  document.getElementById('cdRow').innerHTML = CDOWNS.map(c => {
+    const d = daysLeft(c.dt); const disp = d < 0 ? 0 : d;
+    const note = d <= 3 && d >= 0 ? ' ⚠️ URGENT!' : d < 0 ? ' (Passed)' : d <= 7 ? ' ⚠️' : '';
+    return `<a class="cdc ${c.cl}" href="${c.url}" target="_blank" rel="noopener">
+      <div class="cd-top"><div><div class="cd-n">${c.n} ${YEAR}</div><div class="cd-t">Last Date / Exam</div></div><div class="cd-ic">${c.ic}</div></div>
+      <div class="cd-d">${disp}</div>
+      <div class="cd-l">Days Remaining${note}</div>
     </a>`;
   }).join('');
 }
 
-// ══════════════════════════════════════════════
-//  EXAM CARDS
-// ══════════════════════════════════════════════
-function getStatusInfo(exam) {
-  if (exam.status === 'open') return { dot:'dot-green', label:'Apply Open', color:'var(--secondary)' };
-  if (exam.status === 'admitcard') return { dot:'dot-orange', label:'Admit Card Out', color:'var(--warning)' };
-  if (exam.status === 'dv') return { dot:'dot-orange', label:'DV / Document', color:'var(--warning)' };
-  if (exam.status === 'closed') return { dot:'dot-red', label:'Closed', color:'var(--danger)' };
-  return { dot:'dot-gray', label:'Unknown', color:'var(--muted)' };
+// ═══════════════════════════════════════════════════
+//  EXAM CARDS (3 direct action buttons each)
+// ═══════════════════════════════════════════════════
+let saved = new Set(JSON.parse(localStorage.getItem('sk_sv') || '[]'));
+
+function stInfo(e) {
+  if (e.status === 'open') return { dot:'dot-g', lbl:'Apply Open', col:'var(--g)' };
+  if (e.status === 'admitcard') return { dot:'dot-o', lbl:'Admit Card Out', col:'var(--w)' };
+  return { dot:'dot-r', lbl:'Closed', col:'var(--d)' };
 }
 
-function examCard(exam) {
-  const status = getStatusInfo(exam);
-  const days = getDaysLeft(exam.lastDate);
-  const dl = formatDaysLeft(days);
-  const isSaved = savedExams.has(exam.id);
-  const tagHtml = exam.tags.map((t,i) => {
-    return `<span class="tag ${['tag-blue','tag-green','tag-orange','tag-purple','tag-gray'][i%5]}">${t}</span>`;
-  }).join('');
-  let applyBtn = '';
-  if (exam.status === 'open' && days >= 0) {
-    applyBtn = `<a class="apply-now-btn" href="${exam.applyLink}" target="_blank" onclick="event.stopPropagation()">Apply Now ↗</a>`;
-  } else if (exam.status === 'admitcard') {
-    applyBtn = `<a class="apply-now-btn green" href="${exam.notifLink}" target="_blank" onclick="event.stopPropagation()">Admit Card ↗</a>`;
-  } else {
-    applyBtn = `<a class="apply-now-btn gray" onclick="event.stopPropagation()">Closed</a>`;
-  }
-  return `<div class="exam-card" onclick="window.open('${exam.notifLink}','_blank')">
-    <div class="exam-card-top">
-      <div class="exam-logo">${exam.icon}</div>
-      <div class="exam-info">
-        <div class="exam-name">${exam.name}${exam.trending ? ' 🔥' : ''}${exam.isNew ? '<span class="new-label">NEW</span>' : ''}</div>
-        <div class="exam-org">${exam.org}</div>
-        <div class="exam-tags">${tagHtml}</div>
+function examCard(e) {
+  const st = stInfo(e);
+  const d = daysLeft(e.lastDate);
+  const dl = dlFmt(d);
+  const sv = saved.has(e.id);
+  const tclrs = ['tb','tg2','to','tp','tgr'];
+  const tags = e.tags.map((t, i) => `<span class="tg ${tclrs[i % 5]}">${t}</span>`).join('');
+
+  // 3 direct action buttons
+  const applyBtn = e.showApply && d >= 0
+    ? `<a class="act-btn act-apply" href="${e.applyUrl}" target="_blank" onclick="event.stopPropagation()">✍ Apply ↗</a>`
+    : e.showApply && d < 0
+    ? `<span class="act-btn act-dis">Closed</span>` : '';
+
+  const admitBtn = e.showAdmit
+    ? `<a class="act-btn act-admit" href="${e.admitUrl}" target="_blank" onclick="event.stopPropagation()">⬇ Admit Card ↗</a>` : '';
+
+  const resultBtn = e.showResult
+    ? `<a class="act-btn act-result" href="${e.resultUrl}" target="_blank" onclick="event.stopPropagation()">📊 Result ↗</a>` : '';
+
+  // Also show admit/result as secondary if not primary
+  const admitSec = !e.showAdmit
+    ? `<a class="act-btn act-admit" href="${e.admitUrl}" target="_blank" onclick="event.stopPropagation()">🎫 Admit ↗</a>` : '';
+  const resultSec = !e.showResult
+    ? `<a class="act-btn act-result" href="${e.resultUrl}" target="_blank" onclick="event.stopPropagation()">📊 Result ↗</a>` : '';
+
+  const postFmt = typeof e.posts === 'number' ? e.posts.toLocaleString('en-IN') : e.posts;
+
+  return `<div class="ec" onclick="window.open('${e.infoUrl}','_blank')">
+    <div class="ec-top">
+      <div class="ec-lo">${e.icon}</div>
+      <div class="ec-info">
+        <div class="ec-n">${e.name} ${YEAR}${e.isNew ? '<span class="nl">NEW</span>' : ''}</div>
+        <div class="ec-o">${e.org}</div>
+        <div class="ec-tgs">${tags}</div>
       </div>
-      <button class="save-btn ${isSaved ? 'saved' : ''}" onclick="event.stopPropagation();toggleSave(${exam.id}, this)" title="Save exam">${isSaved ? '★' : '☆'}</button>
+      <button class="sv-btn${sv ? ' s' : ''}" onclick="event.stopPropagation();toggleSv(${e.id},this)">${sv ? '★' : '☆'}</button>
     </div>
-    <div class="exam-card-body">
-      <div class="exam-meta">
-        <div class="meta-item"><label>Total Posts</label><div class="val">${typeof exam.posts==='number'?exam.posts.toLocaleString('en-IN'):exam.posts}</div></div>
-        <div class="meta-item"><label>Last Date</label><div class="${dl.cls}">${dl.text}</div></div>
-        <div class="meta-item"><label>Exam Date</label><div class="val">${exam.examDate}</div></div>
-        <div class="meta-item"><label>Salary</label><div class="val">${exam.salary}</div></div>
+    <div class="ec-body">
+      <div class="ec-meta">
+        <div class="mi"><label>Posts</label><div class="vl">${postFmt}</div></div>
+        <div class="mi"><label>Last Date</label><div class="vl ${dl.c}">${dl.t}</div></div>
+        <div class="mi"><label>Exam</label><div class="vl">${e.examDate} ${YEAR}</div></div>
+        <div class="mi"><label>Salary</label><div class="vl">${e.salary}</div></div>
       </div>
     </div>
-    <div class="exam-card-footer">
-      <div class="status-dot"><div class="dot ${status.dot}"></div><span style="color:${status.color}">${status.label}</span></div>
-      ${applyBtn}
+    <div class="ec-foot">
+      <div class="st-dot"><div class="dot ${st.dot}"></div><span style="color:${st.col}">${st.lbl}</span></div>
+      <div class="ec-acts">
+        ${applyBtn}${admitBtn}${resultBtn}${admitSec}${resultSec}
+      </div>
     </div>
   </div>`;
 }
 
-function toggleSave(id, btn) {
-  event.stopPropagation();
-  if (savedExams.has(id)) { savedExams.delete(id); btn.textContent='☆'; btn.classList.remove('saved'); toast('Removed from saved','☆'); }
-  else { savedExams.add(id); btn.textContent='★'; btn.classList.add('saved'); toast('Exam saved! ⭐','⭐'); }
-  localStorage.setItem('savedExams', JSON.stringify([...savedExams]));
+function toggleSv(id, btn) {
+  if (saved.has(id)) { saved.delete(id); btn.textContent = '☆'; btn.classList.remove('s'); toast('Removed','☆'); }
+  else { saved.add(id); btn.textContent = '★'; btn.classList.add('s'); toast('Saved! ⭐','⭐'); }
+  localStorage.setItem('sk_sv', JSON.stringify([...saved]));
 }
 
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 //  VACANCY PAGE
-// ══════════════════════════════════════════════
-function renderVacancyPage() {
-  const categories = ['All','SSC','UPSC','Railway','Banking','Defence','Teaching','Police','State PSC'];
-  document.getElementById('vacancyChips').innerHTML = categories.map(c =>
-    `<span class="chip ${currentVacancyFilter===c?'active':''}" data-filter="${c}" onclick="filterVacancy('${c}',this)">${c}</span>`
+// ═══════════════════════════════════════════════════
+function renderVPage() {
+  const cats = ['All','SSC','UPSC','Railway','Banking','Defence','Teaching','Police','State PSC'];
+  document.getElementById('vChips').innerHTML = cats.map(c =>
+    `<span class="chip${vFilt === c ? ' act' : ''}" onclick="filterV('${c}',this)">${c}</span>`
   ).join('');
-  let filtered = currentVacancyFilter === 'All' ? EXAMS : EXAMS.filter(e => e.category === currentVacancyFilter || e.state === currentVacancyFilter);
-  document.getElementById('vacancyCount').textContent = filtered.length;
-  document.getElementById('allVacancyGrid').innerHTML = filtered.map(examCard).join('');
+  const f = vFilt === 'All' ? EXAMS : EXAMS.filter(e => e.cat === vFilt || e.state === vFilt);
+  document.getElementById('vCnt').textContent = f.length;
+  document.getElementById('vGrid').innerHTML = f.map(examCard).join('');
+}
+function filterV(cat, el) {
+  vFilt = cat;
+  document.querySelectorAll('#vChips .chip').forEach(c => c.classList.remove('act'));
+  el.classList.add('act');
+  const f = cat === 'All' ? EXAMS : EXAMS.filter(e => e.cat === cat || e.state === cat);
+  document.getElementById('vCnt').textContent = f.length;
+  document.getElementById('vGrid').innerHTML = f.map(examCard).join('');
 }
 
-function filterVacancy(cat, el) {
-  currentVacancyFilter = cat;
-  document.querySelectorAll('#vacancyChips .chip').forEach(c => c.classList.remove('active'));
-  el.classList.add('active');
-  let filtered = cat === 'All' ? EXAMS : EXAMS.filter(e => e.category === cat || e.state === cat);
-  document.getElementById('vacancyCount').textContent = filtered.length;
-  document.getElementById('allVacancyGrid').innerHTML = filtered.map(examCard).join('');
-}
-
-// ══════════════════════════════════════════════
-//  ADMIT CARDS TABLE
-// ══════════════════════════════════════════════
-function renderAdmitCards() {
-  document.getElementById('admitTableBody').innerHTML = ADMIT_CARDS.map(ac => {
-    let pill = '', btn = '';
-    if (ac.status === 'available') {
-      pill = `<span class="pill pill-green">✅ Available</span>${ac.isNew ? '<span class="new-label" style="margin-left:4px">NEW</span>' : ''}`;
-      btn = `<a class="dl-btn" href="${ac.link}" target="_blank">⬇ Download ↗</a>`;
-    } else if (ac.status === 'releasing') {
-      pill = `<span class="pill pill-orange">🕐 Releasing Soon</span>${ac.isNew ? '<span class="new-label" style="margin-left:4px">NEW</span>' : ''}`;
-      btn = `<a class="dl-btn" href="${ac.link}" target="_blank" style="background:var(--warning)">🔔 Watch Site ↗</a>`;
-    } else {
-      pill = '<span class="pill pill-gray">📅 Upcoming</span>';
-      btn = `<a class="dl-btn disabled" href="${ac.link}" target="_blank">📅 Upcoming</a>`;
-    }
-    return `<tr><td><b>${ac.name}</b></td><td>${ac.org}</td><td>${ac.examDate}</td><td>${pill}</td><td>${btn}</td></tr>`;
+// ═══════════════════════════════════════════════════
+//  ADMIT CARDS TABLE (direct download page links)
+// ═══════════════════════════════════════════════════
+function renderAdmit() {
+  document.getElementById('admitBody').innerHTML = ADMITS.map(a => {
+    const nb = a.isNew ? '<span class="nl" style="margin-left:4px">NEW</span>' : '';
+    if (a.status === 'available')
+      return `<tr><td><b>${a.name}</b>${nb}</td><td>${a.org}</td><td>${a.examDate}</td>
+        <td><span class="pill pg">✅ Available Now</span></td>
+        <td><a class="db green" href="${a.link}" target="_blank">⬇ Download Admit Card ↗</a></td></tr>`;
+    if (a.status === 'releasing')
+      return `<tr><td><b>${a.name}</b>${nb}</td><td>${a.org}</td><td>${a.examDate}</td>
+        <td><span class="pill po">🕐 Releasing Soon</span></td>
+        <td><a class="db blue" href="${a.link}" target="_blank" style="background:var(--w)">🔔 Watch Page ↗</a></td></tr>`;
+    return `<tr><td><b>${a.name}</b></td><td>${a.org}</td><td>${a.examDate}</td>
+      <td><span class="pill pgr">📅 Upcoming</span></td>
+      <td><a class="db dis" href="${a.link}" target="_blank">📅 Not Yet</a></td></tr>`;
   }).join('');
 }
 
-// ══════════════════════════════════════════════
-//  RESULTS TABLE
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+//  RESULTS TABLE (direct result page links)
+// ═══════════════════════════════════════════════════
 function renderResults() {
-  document.getElementById('resultTableBody').innerHTML = RESULTS.map(r => {
-    let pill = '', btn = '';
-    if (r.status === 'declared') {
-      pill = `<span class="pill pill-green">✅ Declared</span>${r.isNew ? '<span class="new-label" style="margin-left:4px">NEW</span>' : ''}`;
-      btn = `<a class="dl-btn green" href="${r.link}" target="_blank">👁 Check Result ↗</a>`;
-    } else {
-      pill = '<span class="pill pill-gray">⏳ Awaited</span>';
-      btn = '<span class="dl-btn disabled">⏳ Awaited</span>';
-    }
-    return `<tr><td><b>${r.name}</b></td><td>${r.org}</td><td>${r.date}</td><td>${pill}</td><td>${btn}</td></tr>`;
+  document.getElementById('resultBody').innerHTML = RESULTS.map(r => {
+    const nb = r.isNew ? '<span class="nl" style="margin-left:4px">NEW</span>' : '';
+    if (r.status === 'declared')
+      return `<tr><td><b>${r.name}</b>${nb}</td><td>${r.org}</td><td>${r.date}</td>
+        <td><span class="pill pg">✅ Declared</span></td>
+        <td><a class="db green" href="${r.link}" target="_blank">📊 Check Result ↗</a></td></tr>`;
+    return `<tr><td><b>${r.name}</b></td><td>${r.org}</td><td>${r.date}</td>
+      <td><span class="pill pgr">⏳ Awaited</span></td>
+      <td><a class="db dis">⏳ Awaited</a></td></tr>`;
   }).join('');
 }
 
-// ══════════════════════════════════════════════
-//  NEWS
-// ══════════════════════════════════════════════
-function badgeClass(b) {
-  return { official:'badge-blue', trending:'badge-orange', teacher:'badge-purple', state:'badge-green' }[b] || 'badge-blue';
-}
+// ═══════════════════════════════════════════════════
+//  ALERTS (direct deep links)
+// ═══════════════════════════════════════════════════
+const ALERT_DATA = [
+  { ic:'🚨', bg:'#fee2e2', t:'UP Police SI – '+ daysLeft(nextOccurrence(6,30)) +' Days Left!', s:'Apply at uppbpb.gov.in – deadline approaching', tm:'Today', unread:true, link:'https://uppbpb.gov.in' },
+  { ic:'🎫', bg:'#d1fae5', t:'UPSC CSE Admit Card Active!', s:'Download directly at upsc.gov.in/examinations/e-admit-card', tm:'Today', unread:true, link:'https://upsc.gov.in/examinations/e-admit-card' },
+  { ic:'📋', bg:'#dbeafe', t:'SSC CGL '+YEAR+' – 19,000+ Posts', s:'Apply at ssc.nic.in/Portal/SchemeExamination', tm:'Today', unread:true, link:'https://ssc.nic.in/Portal/SchemeExamination' },
+  { ic:'📊', bg:'#fef3c7', t:'NDA I '+YEAR+' Result Declared', s:'Check at upsc.gov.in/examinations/results', tm:'2 days ago', unread:true, link:'https://upsc.gov.in/examinations/results' },
+  { ic:'🎫', bg:'#d1fae5', t:'CTET '+YEAR+' Admit Card Released', s:'Download at ctet.nic.in/WebInfo/Page/Page?PageId=3&LangId=P', tm:'3 days ago', unread:true, link:'https://ctet.nic.in/WebInfo/Page/Page?PageId=3&LangId=P' },
+  { ic:'📊', bg:'#fef3c7', t:'BPSC CCE Prelims Result Out', s:'Check at bpsc.bih.nic.in', tm:'4 days ago', unread:true, link:'https://bpsc.bih.nic.in' },
+  { ic:'📋', bg:'#dbeafe', t:'SBI Clerk '+YEAR+' – 14,000 Posts', s:'Apply at bank.sbi/careers', tm:'4 days ago', unread:false, link:'https://bank.sbi/careers' },
+  { ic:'🚂', bg:'#dbeafe', t:'RRB NTPC Phase II Dates Announced', s:'Check schedule at rrbapply.gov.in', tm:'5 days ago', unread:false, link:'https://rrbapply.gov.in' },
+];
 
-function newsCard(n) {
-  const trendHtml = n.trending ? `<span class="news-trending">🔥 Trending</span>` : '';
-  const newHtml = n.isNew ? `<span class="source-badge" style="background:#e02424;color:#fff">NEW</span>` : '';
-  const tagsHtml = n.tags.map(t => `<span class="news-tag">${t}</span>`).join('');
-  return `<a class="news-card" href="${n.link}" target="_blank">
-    <div class="news-thumb">${n.icon}</div>
-    <div class="news-body">
-      <div class="news-source">
-        <span class="source-badge ${badgeClass(n.badge)}">${n.badge.toUpperCase()}</span>
-        ${newHtml}
-        <span class="news-time">🕐 ${n.time}</span>
-        ${trendHtml}
-        <span class="source-link">↗ Visit Source</span>
-      </div>
-      <div class="news-title">${n.title}</div>
-      <div class="news-snippet">${n.snippet}</div>
-      <div class="news-actions">${tagsHtml}</div>
-    </div>
-  </a>`;
-}
-
-function filterNews(cat, el) {
-  document.querySelectorAll('.chips .chip').forEach(c => c.classList.remove('active'));
-  if (el) el.classList.add('active');
-  let filtered = cat === 'all' ? NEWS : NEWS.filter(n => n.category === cat || (cat === 'trending' && n.trending));
-  document.getElementById('fullNewsList').innerHTML = filtered.map(newsCard).join('');
-}
-
-// ══════════════════════════════════════════════
-//  ALERTS
-// ══════════════════════════════════════════════
 function renderAlerts() {
-  document.getElementById('alertList').innerHTML = ALERTS_DATA.map(a =>
-    `<div class="alert-card" style="border-left:3px solid ${a.bg}">
-      <div class="alert-icon" style="background:${a.bg}">${a.icon}</div>
-      <div class="alert-body">
-        <div class="alert-title">${a.title}${a.unread?'<span class="new-label" style="font-size:8px;margin-left:6px">UNREAD</span>':''}</div>
-        <div class="alert-sub">${a.sub}</div>
-        <div class="alert-time">🕐 ${a.time}</div>
+  document.getElementById('alList').innerHTML = ALERT_DATA.map(a =>
+    `<a class="ac" href="${a.link}" target="_blank" rel="noopener" style="border-left:3px solid ${a.bg}">
+      <div class="ac-ic" style="background:${a.bg}">${a.ic}</div>
+      <div class="ac-body">
+        <div class="ac-t">${a.t}${a.unread ? '<span class="nl" style="font-size:7px">UNREAD</span>' : ''}</div>
+        <div class="ac-s">${a.s}</div>
+        <div class="ac-tm">🕐 ${a.tm}</div>
       </div>
-      <a class="alert-action" href="${a.link}" target="_blank">Visit ↗</a>
-    </div>`
+      <span class="ac-btn">Visit ↗</span>
+    </a>`
   ).join('');
-  document.getElementById('notifBadge').textContent = ALERTS_DATA.filter(a => a.unread).length;
-  document.getElementById('cnt-alerts').textContent = ALERTS_DATA.filter(a => a.unread).length;
+  const u = ALERT_DATA.filter(a => a.unread).length;
+  document.getElementById('nbCnt').textContent = u;
+  document.getElementById('cnt-a').textContent = u;
 }
 
-function markAllRead() {
-  ALERTS_DATA.forEach(a => a.unread = false);
+function markRead() {
+  ALERT_DATA.forEach(a => a.unread = false);
   renderAlerts();
   toast('All alerts marked as read ✓', '✓');
 }
 
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 //  SAVED
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 function renderSaved() {
-  const saved = EXAMS.filter(e => savedExams.has(e.id));
-  const grid = document.getElementById('savedGrid');
-  const empty = document.getElementById('savedEmpty');
-  if (saved.length === 0) { grid.innerHTML=''; empty.style.display='block'; }
-  else { empty.style.display='none'; grid.innerHTML=saved.map(examCard).join(''); }
+  const sv = EXAMS.filter(e => saved.has(e.id));
+  if (!sv.length) {
+    document.getElementById('savedGrid').innerHTML = '';
+    document.getElementById('savedEmp').style.display = 'block';
+  } else {
+    document.getElementById('savedEmp').style.display = 'none';
+    document.getElementById('savedGrid').innerHTML = sv.map(examCard).join('');
+  }
 }
 
-// ══════════════════════════════════════════════
-//  PREFERENCES
-// ══════════════════════════════════════════════
-function openPref() {
-  renderPrefChecks('centralPrefChecks', CENTRAL_PREFS, userPrefs.central);
-  renderPrefChecks('statePrefChecks', STATE_PREFS, userPrefs.states);
-  renderPrefChecks('alertPrefChecks', ALERT_PREFS, userPrefs.alerts);
-  renderPrefChecks('newsPrefChecks', NEWS_PREFS, userPrefs.news);
-  document.getElementById('prefOverlay').classList.add('open');
-}
-function closePref() { document.getElementById('prefOverlay').classList.remove('open'); }
-function renderPrefChecks(id, items, selected) {
-  document.getElementById(id).innerHTML = items.map(item =>
-    `<label class="pref-check ${selected.includes(item)?'checked':''}">
-      <input type="checkbox" value="${item}" ${selected.includes(item)?'checked':''}
-        onchange="this.closest('.pref-check').classList.toggle('checked',this.checked)">${item}
-    </label>`
-  ).join('');
-}
-function savePreferences() {
-  userPrefs.central = [...document.querySelectorAll('#centralPrefChecks input:checked')].map(i=>i.value);
-  userPrefs.states = [...document.querySelectorAll('#statePrefChecks input:checked')].map(i=>i.value);
-  userPrefs.alerts = [...document.querySelectorAll('#alertPrefChecks input:checked')].map(i=>i.value);
-  userPrefs.news = [...document.querySelectorAll('#newsPrefChecks input:checked')].map(i=>i.value);
-  localStorage.setItem('userPrefs', JSON.stringify(userPrefs));
-  closePref();
-  toast('Preferences saved! Your alerts will be personalized. ✅', '✅');
-}
-
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 //  SEARCH
-// ══════════════════════════════════════════════
-function handleSearch(q) {
-  if (!q.trim()) return;
-  const lower = q.toLowerCase();
-  const results = EXAMS.filter(e =>
-    e.name.toLowerCase().includes(lower) || e.org.toLowerCase().includes(lower) ||
-    e.state.toLowerCase().includes(lower) || e.category.toLowerCase().includes(lower) ||
-    e.tags.some(t => t.toLowerCase().includes(lower))
+// ═══════════════════════════════════════════════════
+document.getElementById('gSrch').oninput = function() {
+  const q = this.value.trim().toLowerCase();
+  if (!q) return;
+  const r = EXAMS.filter(e =>
+    e.name.toLowerCase().includes(q) || e.org.toLowerCase().includes(q) ||
+    e.state.toLowerCase().includes(q) || e.cat.toLowerCase().includes(q) ||
+    e.tags.some(t => t.toLowerCase().includes(q))
   );
-  navigate('vacancies');
-  document.getElementById('allVacancyGrid').innerHTML = results.length ?
-    results.map(examCard).join('') :
-    `<div class="empty" style="grid-column:1/-1"><div class="ei">🔍</div><h3>No results for "${q}"</h3><p>Try different keywords like SSC, UPSC, UP, Banking etc.</p></div>`;
-  document.getElementById('vacancyCount').textContent = results.length;
+  nav('vacancies');
+  document.getElementById('vGrid').innerHTML = r.length
+    ? r.map(examCard).join('')
+    : `<div class="emp" style="grid-column:1/-1"><div class="emp-i">🔍</div><h3>No results for "${this.value}"</h3><p>Try: SSC, UPSC, UP, Banking, Railway...</p></div>`;
+  document.getElementById('vCnt').textContent = r.length;
+};
+
+// ═══════════════════════════════════════════════════
+//  PREFERENCES
+// ═══════════════════════════════════════════════════
+const PREFS = {
+  central:['UPSC / IAS','SSC','Railway (RRB)','Banking (IBPS)','Banking (SBI)','Defence (NDA)','CTET','Police'],
+  states:['Uttar Pradesh','Bihar','Rajasthan','Madhya Pradesh','Maharashtra','Delhi','Punjab','Haryana','Gujarat','West Bengal','Karnataka','Jharkhand'],
+  alerts:['Vacancy Released','Last Date Alert (7d)','Last Date Alert (3d)','Admit Card','Exam Reminder','Result Declared','Answer Key'],
+  news:['Official Govt Sites','Trending Social Media','YouTube Educators','Adda247/Testbook','Drishti IAS','Jagran Josh'],
+};
+let uPrefs = JSON.parse(localStorage.getItem('sk_p') || '{}');
+
+function openPref() {
+  const idMap = { central:'cp', states:'sp', alerts:'ap', news:'np' };
+  Object.keys(PREFS).forEach(k => {
+    document.getElementById(idMap[k]).innerHTML = PREFS[k].map(v =>
+      `<label class="pch${(uPrefs[k]||[]).includes(v)?' ck':''}">
+        <input type="checkbox" value="${v}" ${(uPrefs[k]||[]).includes(v)?'checked':''}
+          onchange="this.closest('.pch').classList.toggle('ck',this.checked)">${v}
+      </label>`
+    ).join('');
+  });
+  document.getElementById('prefOv').classList.add('op');
+}
+function closePref() { document.getElementById('prefOv').classList.remove('op'); }
+function savePrefs() {
+  const idMap = { central:'cp', states:'sp', alerts:'ap', news:'np' };
+  Object.keys(PREFS).forEach(k => {
+    uPrefs[k] = [...document.querySelectorAll(`#${idMap[k]} input:checked`)].map(i => i.value);
+  });
+  localStorage.setItem('sk_p', JSON.stringify(uPrefs));
+  closePref();
+  toast('Preferences saved! ✅', '✅');
 }
 
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 //  TOAST
-// ══════════════════════════════════════════════
-function toast(msg, icon='✅') {
+// ═══════════════════════════════════════════════════
+function toast(msg, icon = '✅') {
   const el = document.createElement('div');
-  el.className='toast'; el.innerHTML=`<span>${icon}</span> ${msg}`;
-  document.getElementById('toast-container').appendChild(el);
-  setTimeout(() => el.remove(), 3500);
+  el.className = 'ts'; el.innerHTML = `<span>${icon}</span> ${msg}`;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(() => el.remove(), 4000);
 }
 
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 //  INIT
-// ══════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
 function init() {
-  renderCountdowns();
-  // Home news (top 5)
-  document.getElementById('homeNewsList').innerHTML = NEWS.slice(0,5).map(newsCard).join('');
-  // Home exam grid (top 6, newest first)
-  document.getElementById('homeExamGrid').innerHTML = [...EXAMS].sort((a,b)=> (b.isNew?1:0)-(a.isNew?1:0)).slice(0,6).map(examCard).join('');
-  // Vacancy page
-  renderVacancyPage();
-  // Admit cards
-  renderAdmitCards();
-  // Results
+  renderCdowns();
+  document.getElementById('homeGrid').innerHTML = EXAMS.slice(0, 6).map(examCard).join('');
+  renderVPage();
+  renderAdmit();
   renderResults();
-  // Full news
-  document.getElementById('fullNewsList').innerHTML = NEWS.map(newsCard).join('');
-  // Alerts
   renderAlerts();
+  updateStats();
+
+  // Fetch live news (cache if fresh, refetch if stale)
+  fetchAll(false);
+
+  // Auto-refresh every hour while tab open
+  setInterval(() => fetchAll(true), TTL);
+
+  // Refetch when user returns to tab after >1hr
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+      const c = getCache();
+      if (!c) fetchAll(true);
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init);
